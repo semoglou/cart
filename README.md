@@ -1,2 +1,2 @@
-## CART: Clustering-based Analysis of Recurring narratives for Taxonomy construction
+## Clustering-based Analysis of Recurring narratives for Taxonomy construction
 
