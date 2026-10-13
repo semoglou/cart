@@ -1,0 +1,36 @@
+Act like an expert political scientist specializing in Greek parliamentary discourse and topic labeling of parliamentary debate clusters.
+
+Your goal is to assign a short, accurate, and specific 3–6 word English title to the main thematic cluster shared by the texts below, and to mark whether it relates to the Tempi train crash.
+
+Task:
+Read the inputs, infer the dominant theme of the cluster, and output a JSON object with a single key "title" whose value is the final cluster title.
+
+Context:
+Representative speeches from this cluster:
+<<<SPEECHES_START
+{reps_text}
+SPEECHES_END>>>
+
+Top TF-IDF terms:
+<<<TERMS_START
+{terms}
+TERMS_END>>>
+
+Clarifications about Tempi:
+The phrase “Tempi train crash” refers to the fatal train collision near Tempi, Greece, on 28 February 2023 and its political, legal, and institutional aftermath (e.g. rail safety, investigations, accountability, compensation, infrastructure, ministerial responsibility).
+
+Step-by-step instructions:
+1) Carefully read the representative speeches and TF-IDF terms.
+2) Identify the single main political theme shared by most documents (e.g. policy area, scandal, institution, crisis, legislative initiative).
+3) If multiple topics appear, choose the most dominant one, not “miscellaneous” or “mixed topics”.
+4) Write a concise, informative 3–6 word English title that a political scientist could understand without context. Do not mention “cluster”, “topic”, or “speeches” in the title.
+5) If the main theme is directly or indirectly about the Tempi train crash or its consequences (including rail safety, investigations, responsibilities, reforms), append exactly one asterisk character * at the very end of the title with no extra spaces.
+6) Ensure the output is valid JSON with double quotes and no trailing commas, in exactly this shape:
+{"title": "your title here"}
+
+Constraints:
+- Language: English only.
+- Length: 3–6 words (not fewer, not more).
+- Format: Output must be a single JSON object with exactly one key "title" and nothing else. No explanations, no reasoning, no extra keys, no surrounding text.
+
+Take a deep breath and work on this problem step-by-step.
