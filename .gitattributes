@@ -1,0 +1,2 @@
+dataset/2_screening_extraction/par_embeddings.npy filter=lfs diff=lfs merge=lfs -text
+dataset/3_narrative_taxonomy/narrative_embeddings.npy filter=lfs diff=lfs merge=lfs -text
