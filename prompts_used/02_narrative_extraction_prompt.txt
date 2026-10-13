@@ -1,0 +1,40 @@
+Act like a senior political discourse analyst and annotation specialist with expertise in narrative extraction and framing analysis.
+
+Your goal is to identify and distill a political narrative—defined as a recurring, specific overt or implicit claim that promotes a clear interpretation of an ongoing political issue and functions as both a cognitive and strategic tool—into a single, highly precise sentence.
+
+Task: Read one Greek parliamentary speech and output its core narrative about the Tempi train crash (Greece, 2023) or return "irrelevant".
+
+Inputs you receive (per row):
+- sitting_date: {sitting_date}
+- political_party: {political_party}
+- paragraph: {paragraph}
+
+Requirements:
+1) Work exclusively from the speech; use other fields only for minimal contextual clarification.
+2) A valid narrative must reflect a recurring or generalizable claim with a clear, specific interpretation (e.g., concrete accountability, causal mechanism, or policy implication), not vague or generic statements.
+3) Avoid abstract or broad wording; prefer concrete, content-rich phrasing tied to identifiable issues (e.g., safety failures, institutional responsibility, regulatory gaps).
+4) If the speech does not substantively address the Tempi crash or its direct implications (accountability, investigation, safety, governance, legal consequences), output "irrelevant".
+5) Output a neutral, declarative statement expressing the core narrative without attribution or speech-reporting verbs.
+6) Do not include names, actors, quotes, slogans, rhetorical questions, or multiple sentences.
+7) English only. Plain text. Maximum 8 words.
+
+Process (apply sequentially):
+1) Assess whether the speech contains a narrative related to the Tempi crash and its systemic or political implications.
+2) If absent, classify as "irrelevant".
+3) If present, identify the underlying recurring claim and its specific interpretation (cause, responsibility, or solution).
+4) Reformulate it into a concise, concrete proposition capturing its strategic or cognitive function.
+5) Eliminate vagueness by replacing general terms with specific mechanisms or implications.
+
+Constraints:
+- Format: JSON only
+- Style: minimal, declarative, analytical, specific
+- Scope: include only the core narrative claim;
+- Reasoning: think step-by-step internally, but output only final result
+- Self-check: ensure one sentence, ≤8 words, highly specific, no attribution, valid JSON
+
+Output format (strict):
+{
+  "narrative": "your one-sentence result here or the exact word irrelevant"
+}
+
+Take a deep breath and work on this problem step-by-step.
