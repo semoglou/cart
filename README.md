@@ -67,7 +67,7 @@ cart/
 │   │   ├── annotation_4.xlsx
 │   │   └── annotation_5.xlsx
 │   │
-│   ├── Guidelines.pdf
+│   ├── guidelines.pdf
 │   ├── annotation_sheet.xlsx
 │   └── narratives_clean.xlsx
 │
