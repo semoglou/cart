@@ -23,6 +23,8 @@ The first stage identifies thematically relevant paragraphs through semantic rep
 
 ![CART Research Pipeline](figs/pipeline.png)
 
+A detailed pseudocode description of the three-stage methodology is available in [Algorithm 1: The CART Framework](figs/algorithm.png).
+
 ## Repository Structure
 
 ```text
