@@ -5,7 +5,7 @@ CART is an unsupervised, clustering-based framework designed to identify, extrac
 
 Constructing a taxonomy of political narratives traditionally requires substantial manual effort, including the identification of relevant textual material, the interpretation of recurring narrative patterns, and the development of a classification scheme. These tasks become increasingly challenging when analyzing large collections of political discourse, where narratives may be expressed through diverse linguistic formulations and evolve over time.
 
-CART addresses these challenges by integrating semantic embeddings, unsupervised ensemble-based confidence estimation and data screening, LLM-assisted narrative extraction, and quality-driven cluster discovery within a unified analytical workflow. Rather than starting from a predetermined set of narrative labels, the framework identifies recurring patterns in the data and progressively organizes them into an interpretable narrative taxonomy.
+CART addresses these challenges by integrating semantic embeddings, unsupervised confidence-guided thematic screening, LLM-assisted narrative extraction, and quality-driven cluster discovery within a unified analytical workflow. Rather than starting from a predetermined set of narrative labels, the framework identifies recurring patterns in the data and progressively organizes them into an interpretable narrative taxonomy.
 
 The approach is designed to reduce the dependence on extensive manual annotation, facilitate the exploration of large textual corpora, and support the systematic identification of narrative structures that might otherwise be difficult to detect through manual analysis alone.
 
@@ -87,7 +87,7 @@ The CART implementation is organized into three sequential analytical notebooks,
 
 | Notebook | Main Function | Data Processing and Outputs |
 |---|---|---|
-| [`01_preparation.ipynb`](framework/01_preparation.ipynb) | **Corpus preparation** | Processes the original parliamentary corpus, applies preprocessing and filtering procedures, and produces the cleaned paragraph dataset. The notebook also generates descriptive visualizations of the parliamentary corpus. |
+| [`01_preparation.ipynb`](framework/01_preparation.ipynb) | **Corpus preparation** | Processes the Initial paragraph-level parliamentary corpus, applies preprocessing and filtering procedures, and produces the cleaned paragraph dataset. The notebook also generates descriptive visualizations of the parliamentary corpus. |
 | [`02_screening_extraction.ipynb`](framework/02_screening_extraction.ipynb) | **Thematic screening and narrative extraction** | Performs paragraph-level semantic clustering and confidence-based screening, identifies Tempi-related parliamentary material, and applies DeepSeek-R1 to extract narrative statements. The workflow includes cluster metadata, LLM-generated cluster titles, extraction validation, and retry procedures. |
 | [`03_narrative_clustering.ipynb`](framework/03_narrative_clustering.ipynb) | **Narrative taxonomy construction** | Loads the extracted narrative statements and their semantic embeddings, performs narrative-level clustering and cluster-quality analysis, and produces the final narrative taxonomy. |
 
@@ -113,7 +113,7 @@ The following section documents the published datasets, their contents, and thei
 
 The repository provides the datasets, semantic embeddings, and intermediate research outputs associated with the three stages of the CART workflow.
 
-These files document the progression from the original parliamentary corpus to the extraction of political narrative statements and the construction of the final narrative taxonomy.
+These files document the progression from the Initial paragraph-level parliamentary corpus to the extraction of political narrative statements and the construction of the final narrative taxonomy.
 
 To facilitate reproducibility, intermediate results are preserved as published checkpoints. The analytical notebooks can load these files directly, allowing researchers to examine subsequent processing stages without repeating computationally intensive operations.
 
@@ -121,11 +121,11 @@ To facilitate reproducibility, intermediate results are preserved as published c
 
 **Directory:** [`dataset/1_preparation/`](dataset/1_preparation/)
 
-This directory contains the original parliamentary corpus, the linguistic resources used during preprocessing, and the resulting cleaned dataset.
+This directory contains the Initial paragraph-level parliamentary corpus, the linguistic resources used during preprocessing, and the resulting cleaned dataset.
 
 | File | Description | Role in the Workflow |
 |---|---|---|
-| [`05_Tempi_paragraphs_clean.csv.zip`](dataset/1_preparation/05_Tempi_paragraphs_clean.csv.zip) | Original parliamentary corpus containing 216,396 paragraphs and associated metadata. | Source dataset loaded by `01_preparation.ipynb`. |
+| [`05_Tempi_paragraphs_clean.csv.zip`](dataset/1_preparation/05_Tempi_paragraphs_clean.csv.zip) | Initial paragraph-level parliamentary corpus containing 216,396 paragraphs and associated metadata. | Source dataset loaded by `01_preparation.ipynb`. |
 | [`01_stopwords_all.txt`](dataset/1_preparation/01_stopwords_all.txt) | Published list of Greek stopwords, including domain-specific terms used in parliamentary discourse analysis. | Linguistic resource used during text preprocessing and cluster interpretation. |
 | [`01_paragraphs_clean.csv.zip`](dataset/1_preparation/01_paragraphs_clean.csv.zip) | Preprocessed parliamentary corpus containing 117,716 paragraphs after the application of the cleaning and filtering procedures. | Main input dataset for paragraph-level thematic screening in `02_screening_extraction.ipynb`. |
 
@@ -193,3 +193,33 @@ In particular:
 Some computationally intensive procedures are retained in the notebooks but are disabled during their default execution. In these cases, the notebooks load the corresponding published checkpoints.
 
 Researchers can therefore follow the documented workflow and examine its intermediate results without necessarily regenerating all embeddings or repeating the original LLM inference.
+
+## Human Annotation and Evaluation
+
+To assess the quality of the LLM-assisted narrative extraction, a human annotation study was conducted to examine how well the generated narrative statements represent the interpretations expressed in their source parliamentary paragraphs.
+
+The evaluation followed a forced-choice design in which annotators examined parliamentary paragraphs and selected the narrative statement that best captured their meaning from a set of candidate responses, including an option indicating that none was appropriate.
+
+The repository provides the annotation materials, individual annotation files, and analytical notebooks used to examine the evaluation results.
+
+### Annotation Materials
+
+**Directory:** [`annotation/`](annotation/)
+
+| File | Description |
+|---|---|
+| [`Guidelines.pdf`](annotation/Guidelines.pdf) | Instructions and criteria used during the annotation process. |
+| [`annotation_sheet.xlsx`](annotation/annotation_sheet.xlsx) | Spreadsheet template used for collecting annotation responses. |
+| [`narratives_clean.xlsx`](annotation/narratives_clean.xlsx) | Narrative data prepared for human annotation. |
+| [`annotations/`](annotation/annotations/) | Individual annotation spreadsheets containing the collected responses. |
+
+### Evaluation and Error Analysis
+
+**Directory:** [`annotation/analysis/`](annotation/analysis/)
+
+| Notebook | Purpose |
+|---|---|
+| [`annotation_results_analysis.ipynb`](annotation/analysis/annotation_results_analysis.ipynb) | Analysis and aggregation of the human annotation results. |
+| [`error_analysis_similarity.ipynb`](annotation/analysis/error_analysis_similarity.ipynb) | Examination of errors and semantic similarity patterns associated with the narrative extraction process. |
+
+The annotation study focuses on the quality of the extracted narrative statements rather than the direct evaluation of the final narrative taxonomy.
