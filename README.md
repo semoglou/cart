@@ -79,3 +79,32 @@ cart/
 └── taxonomy/
     └── narrative_taxonomy_ksil.csv
 ```
+## Workflow
+
+The CART implementation is organized into three sequential analytical notebooks, accompanied by a separate dataset integrity verification notebook. Together, they document the transformation of parliamentary discourse into a structured taxonomy of recurring political narratives.
+
+### Notebooks
+
+| Notebook | Main Function | Data Processing and Outputs |
+|---|---|---|
+| [`01_preparation.ipynb`](framework/01_preparation.ipynb) | **Corpus preparation** | Processes the original parliamentary corpus, applies preprocessing and filtering procedures, and produces the cleaned paragraph dataset. The notebook also generates descriptive visualizations of the parliamentary corpus. |
+| [`02_screening_extraction.ipynb`](framework/02_screening_extraction.ipynb) | **Thematic screening and narrative extraction** | Performs paragraph-level semantic clustering and confidence-based screening, identifies Tempi-related parliamentary material, and applies DeepSeek-R1 to extract narrative statements. The workflow includes cluster metadata, LLM-generated cluster titles, extraction validation, and retry procedures. |
+| [`03_narrative_clustering.ipynb`](framework/03_narrative_clustering.ipynb) | **Narrative taxonomy construction** | Loads the extracted narrative statements and their semantic embeddings, performs narrative-level clustering and cluster-quality analysis, and produces the final narrative taxonomy. |
+
+The notebooks are designed to be followed in numerical order, reflecting the successive stages of the research methodology. Each stage builds on the datasets and intermediate results associated with the preceding stage.
+
+### Dataset Integrity Verification
+
+The repository also includes [`00_dataset_integrity_check.ipynb`](framework/00_dataset_integrity_check.ipynb), a standalone utility for verifying the accessibility and integrity of the published research datasets.
+
+The notebook checks the readability and structure of the available data files, including the embedding arrays distributed through Git LFS. It displays a validation report without modifying the published datasets or generating additional research outputs.
+
+### Published Data and Computational Reproducibility
+
+The repository provides intermediate datasets and experimental outputs alongside the analytical notebooks.
+
+Several computationally intensive procedures, including semantic representation generation, ensemble-based screening, and LLM inference, are documented in the notebooks, while their corresponding published outputs can be loaded directly as checkpoints.
+
+This organization enables researchers to inspect the individual analytical stages, examine intermediate results, and reproduce downstream analyses without necessarily repeating every computationally expensive operation.
+
+The following section documents the published datasets, their contents, and their specific roles within the analytical workflow.
