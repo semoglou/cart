@@ -9,7 +9,7 @@ extensively annotated training datasets.
 Constructing a taxonomy of political narratives traditionally requires
 substantial manual effort, including the identification of relevant
 textual material, the interpretation of recurring narrative patterns,
-and the development of a consistent classification scheme. These tasks
+and the development of a classification scheme. These tasks
 become increasingly challenging when analyzing large collections of
 political discourse, where narratives may be expressed through diverse
 linguistic formulations and evolve over time.
