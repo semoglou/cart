@@ -22,3 +22,55 @@ CART employs a three-stage workflow that progressively transforms unstructured p
 The first stage identifies thematically relevant paragraphs through semantic representations, clustering, and confidence-based screening. The second stage employs DeepSeek-R1 to extract narrative statements from the selected material. Finally, the extracted statements are semantically grouped into recurring narrative families through narrative-level clustering.
 
 ![CART Research Pipeline](figs/pipeline.png)
+
+## Repository Structure
+
+The CART repository contains the computational framework, datasets, narrative taxonomy, human annotation materials, and supporting documentation associated with the research.
+
+```text
+cart/
+├── framework/
+│   ├── 00_dataset_integrity_check.ipynb
+│   ├── 1_preperation.ipynb
+│   ├── 2_screening_extraction.ipynb
+│   └── 03_narrative_clustering.ipynb
+│
+├── dataset/
+│   ├── 1_preparation/
+│   ├── 2_screening_extraction/
+│   └── 3_narrative_taxonomy/
+│
+├── annotation/
+│   ├── Guidelines.pdf
+│   ├── annotation_sheet.xlsx
+│   ├── narratives_clean.xlsx
+│   ├── annotations/
+│   └── analysis/
+│
+├── taxonomy/
+│   └── narrative_taxonomy_ksil.csv
+│
+├── prompts_used/
+│   ├── 02_cluster_titles_prompt.txt
+│   ├── 02_narrative_extraction_prompt.txt
+│   └── 02_narrative_extraction_retry_prompt.txt
+│
+├── figs/
+│   ├── pipeline.png
+│   ├── evolution.png
+│   └── activity.pdf
+│
+├── LICENSE
+└── README.md
+```
+
+The repository is organized into six main directories:
+
+- **`framework/`** contains the Jupyter notebooks implementing the computational workflow, including dataset integrity checks, corpus preparation, thematic screening, LLM-assisted narrative extraction, and narrative clustering.
+- **`dataset/`** contains the original parliamentary corpus, preprocessed datasets, semantic embeddings, intermediate analytical outputs, and final narrative taxonomy.
+- **`annotation/`** provides the materials associated with the human annotation study, including annotation guidelines, annotation spreadsheets, and notebooks for analyzing annotation results.
+- **`taxonomy/`** provides the resulting narrative taxonomy as a standalone CSV file.
+- **`prompts_used/`** contains the original prompts employed for LLM-generated cluster titles and narrative extraction, including the retry procedure.
+- **`figs/`** contains visualizations of the research pipeline, parliamentary activity, and the temporal evolution of narrative families.
+
+The following sections describe the analytical notebooks and document how the published datasets connect the successive stages of the CART workflow.
