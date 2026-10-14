@@ -87,7 +87,7 @@ The CART implementation is organized into three sequential analytical notebooks,
 
 | Notebook | Main Function | Data Processing and Outputs |
 |---|---|---|
-| [`01_preparation.ipynb`](framework/01_preparation.ipynb) | **Corpus preparation** | Processes the Initial paragraph-level parliamentary corpus, applies preprocessing and filtering procedures, and produces the cleaned paragraph dataset. The notebook also generates descriptive visualizations of the parliamentary corpus. |
+| [`01_preparation.ipynb`](framework/01_preparation.ipynb) | **Corpus preparation** | Processes the initial paragraph-level parliamentary corpus, applies preprocessing and filtering procedures, and produces the cleaned paragraph dataset. The notebook also generates descriptive visualizations of the parliamentary corpus. |
 | [`02_screening_extraction.ipynb`](framework/02_screening_extraction.ipynb) | **Thematic screening and narrative extraction** | Performs paragraph-level semantic clustering and confidence-based screening, identifies Tempi-related parliamentary material, and applies DeepSeek-R1 to extract narrative statements. The workflow includes cluster metadata, LLM-generated cluster titles, extraction validation, and retry procedures. |
 | [`03_narrative_clustering.ipynb`](framework/03_narrative_clustering.ipynb) | **Narrative taxonomy construction** | Loads the extracted narrative statements and their semantic embeddings, performs narrative-level clustering and cluster-quality analysis, and produces the final narrative taxonomy. |
 
@@ -113,7 +113,7 @@ The following section documents the published datasets, their contents, and thei
 
 The repository provides the datasets, semantic embeddings, and intermediate research outputs associated with the three stages of the CART workflow.
 
-These files document the progression from the Initial paragraph-level parliamentary corpus to the extraction of political narrative statements and the construction of the final narrative taxonomy.
+These files document the progression from the initial paragraph-level parliamentary corpus to the extraction of political narrative statements and the construction of the final narrative taxonomy.
 
 To facilitate reproducibility, intermediate results are preserved as published checkpoints. The analytical notebooks can load these files directly, allowing researchers to examine subsequent processing stages without repeating computationally intensive operations.
 
@@ -121,7 +121,7 @@ To facilitate reproducibility, intermediate results are preserved as published c
 
 **Directory:** [`dataset/1_preparation/`](dataset/1_preparation/)
 
-This directory contains the Initial paragraph-level parliamentary corpus, the linguistic resources used during preprocessing, and the resulting cleaned dataset.
+This directory contains the initial paragraph-level parliamentary corpus, the linguistic resources used during preprocessing, and the resulting cleaned dataset.
 
 | File | Description | Role in the Workflow |
 |---|---|---|
