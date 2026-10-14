@@ -99,16 +99,6 @@ The repository also includes [`00_dataset_integrity_check.ipynb`](framework/00_d
 
 The notebook checks the readability and structure of the available data files, including the embedding arrays distributed through Git LFS. It displays a validation report without modifying the published datasets or generating additional research outputs.
 
-### Published Data and Computational Reproducibility
-
-The repository provides intermediate datasets and experimental outputs alongside the analytical notebooks.
-
-Several computationally intensive procedures, including semantic representation generation, ensemble-based screening, and LLM inference, are documented in the notebooks, while their corresponding published outputs can be loaded directly as checkpoints.
-
-This organization enables researchers to inspect the individual analytical stages, examine intermediate results, and reproduce downstream analyses without necessarily repeating every computationally expensive operation.
-
-The following section documents the published datasets, their contents, and their specific roles within the analytical workflow.
-
 ## Datasets and Research Outputs
 
 The repository provides the datasets, semantic embeddings, and intermediate research outputs associated with the three stages of the CART workflow.
@@ -332,4 +322,4 @@ For questions or feedback about **CART**, please contact:
 
 ## License
 
-This project is licensed under the [MIT](LICENSE) License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
