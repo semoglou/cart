@@ -306,6 +306,7 @@ The original prompts are available in [`prompts_used/`](prompts_used/).
 Researchers interested in examining the published results can instead use the provided datasets and checkpoints without performing new LLM inference.
 
 ## Acknowledgments
+
 This work was supported by the [_Archimedes Research Unit_](https://archimedesai.gr/) at the [_Athena Research Center_](https://www.athenarc.gr/en).
 
 <br>
@@ -317,6 +318,7 @@ This work was supported by the [_Archimedes Research Unit_](https://archimedesai
 ## Contact
 
 For questions or feedback about **CART**, please contact:
+
 - [a.semoglou@outlook.com](mailto:a.semoglou@outlook.com)
 - [thomtsel1@gmail.com](mailto:thomtsel1@gmail.com)
 
