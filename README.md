@@ -1,73 +1,44 @@
 # CART
 ### Clustering-based Analysis of Recurring narratives for Taxonomy construction
 
-CART is a computational framework for identifying, extracting, and
-organizing recurring political narratives in large collections of text.
+CART is an unsupervised, clustering-based framework designed to identify,
+extract, and organize recurring political narratives from large-scale
+textual data without requiring predefined narrative categories or
+extensively annotated training datasets.
 
-The framework combines semantic text representations, clustering-based
-thematic filtering, confidence-based screening, large language models
-(LLMs), and narrative-level clustering to construct interpretable
-taxonomies of political narratives.
+Constructing a taxonomy of political narratives traditionally requires
+substantial manual effort, including the identification of relevant
+textual material, the interpretation of recurring narrative patterns,
+and the development of a consistent classification scheme. These tasks
+become increasingly challenging when analyzing large collections of
+political discourse, where narratives may be expressed through diverse
+linguistic formulations and evolve over time.
 
-This repository provides the implementation and research outputs of
-CART's application to Greek parliamentary discourse concerning the
-2023 Tempi railway disaster.
+CART addresses these challenges by combining semantic embeddings,
+ensemble clustering, confidence-based screening, and large language
+models (LLMs) within a unified analytical workflow. Rather than
+starting from a predetermined set of narrative labels, the framework
+identifies recurring patterns in the data and progressively organizes
+them into an interpretable narrative taxonomy.
 
-The analysis examines parliamentary debates from March 2023 onward,
-focusing on how political actors construct, communicate, and reproduce
-narratives surrounding the disaster, institutional responsibility,
-accountability, and railway safety.
+The approach is designed to reduce the dependence on extensive manual
+annotation, facilitate the exploration of large textual corpora, and
+support the systematic identification of narrative structures that
+might otherwise be difficult to detect through manual analysis alone.
 
-The repository includes the analytical notebooks, intermediate and
-final datasets, original LLM prompts, and figures required to
-understand the research workflow and reproduce the published
-computational analyses using the provided checkpoints.
+The methodology is developed and demonstrated through an analysis of
+Greek parliamentary discourse surrounding the 2023 Tempi railway
+disaster. Using a corpus of 216,396 parliamentary paragraphs, CART
+combines paragraph-level thematic filtering, LLM-assisted narrative
+extraction, and narrative-level clustering to identify recurring
+political narratives concerning the disaster, institutional
+responsibility, accountability, and railway safety.
 
----
+The resulting taxonomy comprises ten political narrative families,
+providing a structured representation of the dominant narrative
+patterns emerging from parliamentary debates and enabling their
+subsequent comparative and temporal analysis.
 
-## Research Pipeline
-
-CART follows a three-stage analytical workflow:
-
-1. **Paragraph-Level Thematic Filtering:** Semantic embeddings,
-   clustering, and confidence-based screening are used to identify
-   parliamentary paragraphs relevant to the research topic.
-
-2. **LLM-Assisted Narrative Extraction:** A large language model
-   identifies and extracts political narrative statements from
-   the selected parliamentary paragraphs.
-
-3. **Narrative-Level Clustering:** Extracted narrative statements
-   are represented semantically and grouped into recurring
-   narrative families to construct a political narrative taxonomy.
-
-![CART Research Pipeline](figs/pipeline.png)
-
-*Figure 1. Overview of the CART framework, illustrating the three
-analytical stages from parliamentary discourse to political
-narrative taxonomy.*
-
-### Application to Greek Parliamentary Discourse
-
-The empirical application begins with a corpus of **216,396 parliamentary
-paragraphs**.
-
-Following corpus preparation and thematic filtering, **10,229
-Tempi-related paragraphs** are selected for narrative extraction.
-
-The LLM-assisted extraction stage produces **4,537 narrative
-statements**, which are subsequently organized into **10 recurring
-political narrative families**.
-
-| Analytical stage | Output |
-|---|---:|
-| Original parliamentary corpus | 216,396 paragraphs |
-| Cleaned parliamentary corpus | 117,716 paragraphs |
-| Tempi-related sub-corpus | 10,229 paragraphs |
-| Extracted narrative statements | 4,537 statements |
-| Final political narrative taxonomy | 10 narrative families |
-
-The following sections document the analytical notebooks, the
-relationships between the published datasets, the methodological
-choices underlying each stage, and the procedures for reproducing
-the analysis.
+This repository provides the analytical notebooks, datasets,
+intermediate outputs, original LLM prompts, and visualizations
+documenting the complete research workflow.
