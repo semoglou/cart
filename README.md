@@ -115,8 +115,6 @@ The repository provides the datasets, semantic embeddings, and intermediate rese
 
 These files document the progression from the initial paragraph-level parliamentary corpus to the extraction of political narrative statements and the construction of the final narrative taxonomy.
 
-To facilitate reproducibility, intermediate results are preserved as published checkpoints. The analytical notebooks can load these files directly, allowing researchers to examine subsequent processing stages without repeating computationally intensive operations.
-
 ### 1. Corpus Preparation
 
 **Directory:** [`dataset/1_preparation/`](dataset/1_preparation/)
@@ -198,7 +196,7 @@ Researchers can therefore follow the documented workflow and examine its interme
 
 To assess the quality of the LLM-assisted narrative extraction, a human annotation study was conducted to examine how well the generated narrative statements represent the interpretations expressed in their source parliamentary paragraphs.
 
-The evaluation followed a forced-choice design in which annotators examined parliamentary paragraphs and selected the narrative statement that best captured their meaning from a set of candidate responses, including an option indicating that none was appropriate.
+The evaluation followed a forced-choice design in which annotators examined parliamentary paragraphs and selected the response that best represented the meaning of each paragraph from a set of candidate options.
 
 The repository provides the annotation materials, individual annotation files, and analytical notebooks used to examine the evaluation results.
 
@@ -317,6 +315,21 @@ The original prompts are available in [`prompts_used/`](prompts_used/).
 
 Researchers interested in examining the published results can instead use the provided datasets and checkpoints without performing new LLM inference.
 
+## Acknowledgments
+This work was supported by the [_Archimedes Research Unit_](https://archimedesai.gr/) at the [_Athena Research Center_](https://www.athenarc.gr/en).
+
+<br>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/semoglou/cake/main/logos/AthenaRC_Archimedes_Unit_Logo_EN_Standard_Colour.png" alt="Athena Research Center and Archimedes Research Unit" width="250">
+</p>
+
+## Contact
+
+For questions or feedback about **CART**, please contact:
+- [a.semoglou@outlook.com](mailto:a.semoglou@outlook.com)
+- [thomtsel1@gmail.com](mailto:thomtsel1@gmail.com)
+
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT](LICENSE) License.
