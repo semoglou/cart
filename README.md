@@ -42,3 +42,18 @@ subsequent comparative and temporal analysis.
 This repository provides the analytical notebooks, datasets,
 intermediate outputs, original LLM prompts, and visualizations
 documenting the complete research workflow.
+
+## Research Pipeline
+
+CART employs a three-stage workflow that progressively transforms
+unstructured parliamentary discourse into an interpretable taxonomy
+of recurring political narratives.
+
+The first stage identifies thematically relevant paragraphs through
+semantic representations, clustering, and confidence-based screening.
+The second stage employs DeepSeek-R1 to extract narrative statements
+from the selected material. Finally, the extracted statements are
+semantically grouped into recurring narrative families through
+narrative-level clustering.
+
+![CART Research Pipeline](figs/pipeline.png)
