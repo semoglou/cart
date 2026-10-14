@@ -25,10 +25,13 @@ The first stage identifies thematically relevant paragraphs through semantic rep
 
 ## Repository Structure
 
-The CART repository contains the computational framework, datasets, narrative taxonomy, human annotation materials, and supporting documentation associated with the research.
+The CART repository contains the computational framework, datasets,
+intermediate research outputs, narrative taxonomy, human annotation
+materials, LLM prompts, and supporting visualizations.
 
 ```text
 cart/
+│
 ├── framework/
 │   ├── 00_dataset_integrity_check.ipynb
 │   ├── 1_preperation.ipynb
@@ -36,16 +39,42 @@ cart/
 │   └── 03_narrative_clustering.ipynb
 │
 ├── dataset/
+│   │
 │   ├── 1_preparation/
+│   │   ├── 05_Tempi_paragraphs_clean.csv.zip
+│   │   ├── 01_stopwords_all.txt
+│   │   └── 01_paragraphs_clean.csv.zip
+│   │
 │   ├── 2_screening_extraction/
+│   │   ├── par_embeddings.npy
+│   │   ├── 02_dataset_clustered.csv.zip
+│   │   ├── 02_cluster_metadata.csv
+│   │   ├── 02_clusters_with_titles.csv
+│   │   ├── 03_tempi_df_dataset.csv
+│   │   ├── 04_tempi_df_R1_narratives.csv
+│   │   ├── 05_tempi_df_R1_invalid_jsons.csv
+│   │   ├── 05_tempi_df_R1_extra_narratives.csv
+│   │   └── 06_tempi_df_R1_final_narratives.csv
+│   │
 │   └── 3_narrative_taxonomy/
+│       ├── narrative_embeddings.npy
+│       └── narrative_taxonomy_ksil.csv
 │
 ├── annotation/
 │   ├── Guidelines.pdf
 │   ├── annotation_sheet.xlsx
 │   ├── narratives_clean.xlsx
+│   │
 │   ├── annotations/
+│   │   ├── annotation_1.xlsx
+│   │   ├── annotation_2.xlsx
+│   │   ├── annotation_3.xlsx
+│   │   ├── annotation_4.xlsx
+│   │   └── annotation_5.xlsx
+│   │
 │   └── analysis/
+│       ├── annotation_results_analysis.ipynb
+│       └── error_analysis_similarity.ipynb
 │
 ├── taxonomy/
 │   └── narrative_taxonomy_ksil.csv
@@ -60,17 +89,21 @@ cart/
 │   ├── evolution.png
 │   └── activity.pdf
 │
+├── .gitattributes
+├── .gitignore
 ├── LICENSE
 └── README.md
 ```
 
-The repository is organized into six main directories:
+### Directory Overview
 
-- **`framework/`** contains the Jupyter notebooks implementing the computational workflow, including dataset integrity checks, corpus preparation, thematic screening, LLM-assisted narrative extraction, and narrative clustering.
-- **`dataset/`** contains the original parliamentary corpus, preprocessed datasets, semantic embeddings, intermediate analytical outputs, and final narrative taxonomy.
-- **`annotation/`** provides the materials associated with the human annotation study, including annotation guidelines, annotation spreadsheets, and notebooks for analyzing annotation results.
-- **`taxonomy/`** provides the resulting narrative taxonomy as a standalone CSV file.
-- **`prompts_used/`** contains the original prompts employed for LLM-generated cluster titles and narrative extraction, including the retry procedure.
-- **`figs/`** contains visualizations of the research pipeline, parliamentary activity, and the temporal evolution of narrative families.
-
-The following sections describe the analytical notebooks and document how the published datasets connect the successive stages of the CART workflow.
+| Directory | Contents |
+|---|---|
+| `framework/` | Jupyter notebooks implementing the CART computational workflow and dataset integrity checks. |
+| `dataset/1_preparation/` | Original parliamentary corpus, Greek stopwords, and cleaned parliamentary paragraphs. |
+| `dataset/2_screening_extraction/` | Paragraph embeddings, clustering outputs, cluster metadata, thematic subsets, and LLM-extracted narratives. |
+| `dataset/3_narrative_taxonomy/` | Narrative embeddings and the resulting narrative taxonomy. |
+| `annotation/` | Human annotation materials, individual annotation files, and evaluation notebooks. |
+| `taxonomy/` | Standalone CSV containing the narrative taxonomy. |
+| `prompts_used/` | Original LLM prompts used for cluster labeling and narrative extraction. |
+| `figs/` | Research pipeline diagram and visualizations of parliamentary activity and narrative evolution. |
