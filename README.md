@@ -223,3 +223,100 @@ The repository provides the annotation materials, individual annotation files, a
 | [`error_analysis_similarity.ipynb`](annotation/analysis/error_analysis_similarity.ipynb) | Examination of errors and semantic similarity patterns associated with the narrative extraction process. |
 
 The annotation study focuses on the quality of the extracted narrative statements rather than the direct evaluation of the final narrative taxonomy.
+
+## Results and Visualizations
+
+The application of CART to Greek parliamentary discourse surrounding the Tempi railway disaster resulted in the extraction of **4,537 political narrative statements**, organized into **ten recurring narrative families**.
+
+The resulting taxonomy captures distinct but related interpretations of the disaster, including institutional responsibility, accountability, railway safety, systemic governance failures, privatization, and political exploitation.
+
+### Discovered Narrative Families
+
+The following table presents the ten narrative families identified through the final K-SIL clustering solution.
+
+| Cluster | Narrative Family |
+|---|---|
+| 0 | Judicial and procedural obstacles to accountability |
+| 1 | Government cover-up of Tempi accountability |
+| 2 | Systemic governance failures caused preventable disaster |
+| 3 | Tempi crash resulted from systemic criminal failure |
+| 4 | Government obstructs crash investigation to evade accountability |
+| 5 | Negligence caused the preventable Tempi train crash |
+| 6 | Railway safety remains neglected and unsecured |
+| 7 | Legal framework shields ministers from accountability |
+| 8 | Opposition exploits the tragedy for political gain |
+| 9 | Railway privatization caused systemic safety failures |
+
+These labels summarize recurring claims expressed in parliamentary discourse and should not be interpreted as factual assertions about the disaster.
+
+The complete narrative-level clustering output is available in [`taxonomy/narrative_taxonomy_ksil.csv`](taxonomy/narrative_taxonomy_ksil.csv).
+
+### Temporal Evolution of Narrative Families
+
+Beyond identifying recurring narrative families, the resulting taxonomy enables the examination of how political narratives evolve over time.
+
+The following visualization presents the monthly distribution of the discovered narrative families across the parliamentary discourse, using a three-month centered rolling mean.
+
+![Temporal Evolution of Parliamentary Narrative Families](figs/evolution.png)
+
+The visualization illustrates changes in the relative prominence and overall volume of different narrative families throughout the period under examination.
+
+Together, the taxonomy and its temporal representation provide a structured basis for exploring how competing interpretations of the Tempi railway disaster emerge, persist, and evolve in parliamentary debate.
+
+## Requirements and Reproducibility
+
+The CART workflow is implemented in Python and documented through Jupyter notebooks. The notebooks are designed for execution in a Python environment with the required scientific computing libraries and access to the published research datasets.
+
+### Software Requirements
+
+The main software dependencies include:
+
+- **Python** and **Jupyter Notebook** or **Google Colab**
+- **NumPy** and **pandas** for numerical computation and data processing
+- **scikit-learn** and **SciPy** for dimensionality reduction, clustering, and statistical analysis
+- **Matplotlib** and **Seaborn** for data visualization
+- **NLTK** for text preprocessing
+- **Git LFS** for retrieving large embedding files
+
+Additional dependencies are required for specific computational stages, including `boto3` and `botocore` for LLM inference through Amazon Bedrock.
+
+### Accessing the Repository
+
+Clone the repository and retrieve the files managed through Git LFS:
+
+```bash
+git clone https://github.com/semoglou/cart.git
+cd cart
+git lfs install
+git lfs pull
+```
+
+The analytical notebooks are available in the [`framework/`](framework/) directory.
+
+Before running the analytical workflow, researchers can use [`00_dataset_integrity_check.ipynb`](framework/00_dataset_integrity_check.ipynb) to verify the accessibility and readability of the published datasets.
+
+### Reproducing the Workflow
+
+The three main analytical notebooks follow the successive stages of the CART methodology:
+
+1. [`01_preparation.ipynb`](framework/01_preparation.ipynb) — Corpus preparation and preprocessing.
+2. [`02_screening_extraction.ipynb`](framework/02_screening_extraction.ipynb) — Thematic screening and LLM-assisted narrative extraction.
+3. [`03_narrative_clustering.ipynb`](framework/03_narrative_clustering.ipynb) — Narrative clustering and taxonomy construction.
+
+The repository includes published intermediate datasets and semantic embeddings that can be loaded as checkpoints.
+
+This allows researchers to inspect the workflow and reproduce downstream analyses without necessarily repeating the most computationally intensive stages.
+
+### Computational Considerations
+
+Full reproduction of the original experiments may require substantial computational resources, particularly for semantic embedding generation, clustering experiments, and LLM-assisted extraction.
+
+The narrative extraction stage uses DeepSeek-R1 through Amazon Bedrock and therefore requires appropriate service access and configuration if the original inference procedures are to be repeated.
+
+The original prompts are available in [`prompts_used/`](prompts_used/).
+
+Researchers interested in examining the published results can instead use the provided datasets and checkpoints without performing new LLM inference.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
