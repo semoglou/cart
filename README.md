@@ -239,6 +239,14 @@ These labels summarize recurring claims expressed in parliamentary discourse and
 
 The complete narrative-level clustering output is available in [`taxonomy/narrative_taxonomy_ksil.csv`](taxonomy/narrative_taxonomy_ksil.csv).
 
+### Narrative Family Distribution and Cluster Quality
+
+The following visualization summarizes the distribution and clustering quality of the ten narrative families identified by K-SIL.
+
+For each cluster, the blue bars indicate its share of the extracted narrative statements, while the red bars represent its mean silhouette coefficient, providing an indication of cluster cohesion and separation in the semantic embedding space.
+
+![Narrative Family Distribution and Cluster Quality](figs/ksilsum.png)
+
 ### Temporal Evolution of Narrative Families
 
 Beyond identifying recurring narrative families, the resulting taxonomy enables the examination of how political narratives evolve over time.
