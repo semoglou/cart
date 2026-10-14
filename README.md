@@ -23,6 +23,9 @@ The first stage identifies thematically relevant paragraphs through semantic rep
 
 ![CART Research Pipeline](figs/pipeline.png)
 
+## Repository Structure
+
+```text
 cart/
 │
 ├── framework/
@@ -75,3 +78,4 @@ cart/
 │
 └── taxonomy/
     └── narrative_taxonomy_ksil.csv
+```
