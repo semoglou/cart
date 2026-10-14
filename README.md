@@ -1,4 +1,5 @@
-### CART: **C**lustering-based **A**nalysis of **R**ecurring narratives for **T**axonomy construction
+# CART
+### **C**lustering-based **A**nalysis of **R**ecurring narratives for **T**axonomy construction
 
 CART is an unsupervised, clustering-based framework designed to identify, extract, and organize recurring political narratives from large-scale textual data without requiring predefined narrative categories or extensively annotated training datasets.
 
