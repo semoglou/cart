@@ -108,3 +108,88 @@ Several computationally intensive procedures, including semantic representation 
 This organization enables researchers to inspect the individual analytical stages, examine intermediate results, and reproduce downstream analyses without necessarily repeating every computationally expensive operation.
 
 The following section documents the published datasets, their contents, and their specific roles within the analytical workflow.
+
+## Datasets and Research Outputs
+
+The repository provides the datasets, semantic embeddings, and intermediate research outputs associated with the three stages of the CART workflow.
+
+These files document the progression from the original parliamentary corpus to the extraction of political narrative statements and the construction of the final narrative taxonomy.
+
+To facilitate reproducibility, intermediate results are preserved as published checkpoints. The analytical notebooks can load these files directly, allowing researchers to examine subsequent processing stages without repeating computationally intensive operations.
+
+### 1. Corpus Preparation
+
+**Directory:** [`dataset/1_preparation/`](dataset/1_preparation/)
+
+This directory contains the original parliamentary corpus, the linguistic resources used during preprocessing, and the resulting cleaned dataset.
+
+| File | Description | Role in the Workflow |
+|---|---|---|
+| [`05_Tempi_paragraphs_clean.csv.zip`](dataset/1_preparation/05_Tempi_paragraphs_clean.csv.zip) | Original parliamentary corpus containing 216,396 paragraphs and associated metadata. | Source dataset loaded by `01_preparation.ipynb`. |
+| [`01_stopwords_all.txt`](dataset/1_preparation/01_stopwords_all.txt) | Published list of Greek stopwords, including domain-specific terms used in parliamentary discourse analysis. | Linguistic resource used during text preprocessing and cluster interpretation. |
+| [`01_paragraphs_clean.csv.zip`](dataset/1_preparation/01_paragraphs_clean.csv.zip) | Preprocessed parliamentary corpus containing 117,716 paragraphs after the application of the cleaning and filtering procedures. | Main input dataset for paragraph-level thematic screening in `02_screening_extraction.ipynb`. |
+
+The preprocessing stage applies text normalization and corpus filtering procedures to prepare parliamentary paragraphs for semantic analysis.
+
+The corresponding implementation is provided in [`01_preparation.ipynb`](framework/01_preparation.ipynb).
+
+### 2. Thematic Screening and Narrative Extraction
+
+**Directory:** [`dataset/2_screening_extraction/`](dataset/2_screening_extraction/)
+
+This directory contains the intermediate outputs of paragraph-level semantic clustering, thematic screening, and LLM-assisted narrative extraction.
+
+The published files document both the identification of Tempi-related parliamentary material and the subsequent extraction and validation of narrative statements.
+
+#### Thematic Screening
+
+| File | Description | Role in the Workflow |
+|---|---|---|
+| [`par_embeddings.npy`](dataset/2_screening_extraction/par_embeddings.npy) | Semantic embeddings representing the cleaned parliamentary paragraphs. | Input to paragraph-level clustering and confidence-based screening. |
+| [`02_dataset_clustered.csv.zip`](dataset/2_screening_extraction/02_dataset_clustered.csv.zip) | Parliamentary paragraph dataset enriched with clustering results. | Published checkpoint used for thematic screening and downstream cluster analysis. |
+| [`02_cluster_metadata.csv`](dataset/2_screening_extraction/02_cluster_metadata.csv) | Cluster-level metadata, including representative terms, representative paragraphs, and associated confidence information. | Supports the interpretation and examination of identified thematic clusters. |
+| [`02_clusters_with_titles.csv`](dataset/2_screening_extraction/02_clusters_with_titles.csv) | Cluster metadata supplemented with LLM-generated descriptive titles. | Supports the identification of clusters associated with the Tempi railway disaster. |
+| [`03_tempi_df_dataset.csv`](dataset/2_screening_extraction/03_tempi_df_dataset.csv) | Selected parliamentary paragraphs identified as relevant to the Tempi disaster. | Input corpus for LLM-assisted narrative extraction. |
+
+#### Narrative Extraction and Validation
+
+| File | Description | Role in the Workflow |
+|---|---|---|
+| [`04_tempi_df_R1_narratives.csv`](dataset/2_screening_extraction/04_tempi_df_R1_narratives.csv) | Results of the initial narrative extraction performed using DeepSeek-R1. | Initial extraction checkpoint used for validation and subsequent processing. |
+| [`05_tempi_df_R1_invalid_jsons.csv`](dataset/2_screening_extraction/05_tempi_df_R1_invalid_jsons.csv) | Records associated with responses that did not yield valid JSON during the initial extraction. | Identifies cases requiring additional processing. |
+| [`05_tempi_df_R1_extra_narratives.csv`](dataset/2_screening_extraction/05_tempi_df_R1_extra_narratives.csv) | Results of the supplementary extraction procedure applied to problematic responses. | Provides additional extraction results for the consolidation process. |
+| [`06_tempi_df_R1_final_narratives.csv`](dataset/2_screening_extraction/06_tempi_df_R1_final_narratives.csv) | Final consolidated dataset of extracted political narrative statements. | Main input to narrative-level clustering and taxonomy construction. |
+
+The screening and extraction procedures are documented in [`02_screening_extraction.ipynb`](framework/02_screening_extraction.ipynb).
+
+The original LLM prompts used for cluster title generation, narrative extraction, and extraction retries are preserved in [`prompts_used/`](prompts_used/).
+
+### 3. Narrative Taxonomy Construction
+
+**Directory:** [`dataset/3_narrative_taxonomy/`](dataset/3_narrative_taxonomy/)
+
+This directory contains the semantic representations of the extracted narrative statements and the resulting narrative taxonomy.
+
+| File | Description | Role in the Workflow |
+|---|---|---|
+| [`narrative_embeddings.npy`](dataset/3_narrative_taxonomy/narrative_embeddings.npy) | Semantic embeddings of the extracted political narrative statements. | Input to narrative-level clustering and cluster-quality analysis. |
+| [`narrative_taxonomy_ksil.csv`](dataset/3_narrative_taxonomy/narrative_taxonomy_ksil.csv) | Narrative-level clustering results, including the labels assigned to extracted statements. | Published output of the taxonomy construction stage. |
+
+The corresponding analytical procedures are implemented in [`03_narrative_clustering.ipynb`](framework/03_narrative_clustering.ipynb).
+
+The final taxonomy organizes the extracted statements into ten recurring political narrative families.
+
+### Data Availability and Checkpoints
+
+The repository preserves intermediate research outputs to support the inspection and reproduction of individual analytical stages.
+
+In particular:
+
+- Compressed CSV files (`.csv.zip`) are used for larger tabular datasets.
+- NumPy arrays (`.npy`) store the semantic embeddings required for clustering.
+- Published intermediate CSV files document the successive stages of thematic screening and narrative extraction.
+- Large embedding files are distributed through Git LFS.
+
+Some computationally intensive procedures are retained in the notebooks but are disabled during their default execution. In these cases, the notebooks load the corresponding published checkpoints.
+
+Researchers can therefore follow the documented workflow and examine its intermediate results without necessarily regenerating all embeddings or repeating the original LLM inference.
