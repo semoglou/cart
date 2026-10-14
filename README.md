@@ -14,9 +14,7 @@ become increasingly challenging when analyzing large collections of
 political discourse, where narratives may be expressed through diverse
 linguistic formulations and evolve over time.
 
-CART addresses these challenges by combining semantic embeddings,
-ensemble clustering, confidence-based screening, and large language
-models (LLMs) within a unified analytical workflow. Rather than
+CART addresses these challenges by integrating semantic embeddings, unsupervised ensemble-based confidence estimation and data screening, LLM-assisted narrative extraction, and quality-driven cluster discovery within a unified analytical workflow. Rather than
 starting from a predetermined set of narrative labels, the framework
 identifies recurring patterns in the data and progressively organizes
 them into an interpretable narrative taxonomy.
