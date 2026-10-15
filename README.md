@@ -78,8 +78,10 @@ cart/
 │   ├── 02_narrative_extraction_prompt.txt
 │   └── 02_narrative_extraction_retry_prompt.txt
 │
-└── taxonomy/
-    └── narrative_taxonomy_ksil.csv
+├── taxonomy/
+|    └── narrative_taxonomy_ksil.csv
+|
+└── requirements.txt
 ```
 ## Workflow
 
