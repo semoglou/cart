@@ -297,9 +297,9 @@ Before running the analytical workflow, researchers can use [`00_dataset_integri
 
 The three main analytical notebooks follow the successive stages of the CART methodology:
 
-1. [`01_preparation.ipynb`](framework/01_preparation.ipynb) — Corpus preparation and preprocessing.
-2. [`02_screening_extraction.ipynb`](framework/02_screening_extraction.ipynb) — Thematic screening and LLM-assisted narrative extraction.
-3. [`03_narrative_clustering.ipynb`](framework/03_narrative_clustering.ipynb) — Narrative clustering and taxonomy construction.
+1. [`01_preparation.ipynb`](framework/01_preparation.ipynb): Corpus preparation and preprocessing.
+2. [`02_screening_extraction.ipynb`](framework/02_screening_extraction.ipynb): Thematic screening and LLM-assisted narrative extraction.
+3. [`03_narrative_clustering.ipynb`](framework/03_narrative_clustering.ipynb): Narrative clustering and taxonomy construction.
 
 The repository includes published intermediate datasets and semantic embeddings that can be loaded as checkpoints.
 
