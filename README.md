@@ -80,7 +80,8 @@ cart/
 │
 └── taxonomy/
     ├── narrative_taxonomy_ksil_with_paragraphs.csv
-    └── narrative_taxonomy_ksil.csv
+    ├── narrative_taxonomy_ksil.csv
+    └── CART_ksil_taxonomy_full.csv
 ```
 ## Workflow
 
