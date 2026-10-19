@@ -43,6 +43,7 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 
 <details>
 <summary>📁 <a href="dataset/"><strong>dataset/</strong></a></summary>
+
 <ul>
 <li>
 <details>
@@ -82,10 +83,12 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 </details>
 </li>
 </ul>
+
 </details>
 
 <details>
 <summary>📁 <a href="annotation/"><strong>annotation/</strong></a></summary>
+
 <ul>
 <li>
 <details>
@@ -114,6 +117,7 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 <li>📊 <a href="annotation/annotation_sheet.xlsx">annotation_sheet.xlsx</a></li>
 <li>📊 <a href="annotation/narratives_clean.xlsx">narratives_clean.xlsx</a></li>
 </ul>
+
 </details>
 
 <details>
