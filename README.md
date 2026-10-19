@@ -293,6 +293,14 @@ The main software dependencies include:
 
 Additional dependencies are required for specific computational stages, including `boto3` and `botocore` for LLM inference through Amazon Bedrock.
 
+### Semantic Embedding Generation
+
+The paragraph-level and narrative-level semantic embeddings were generated using the Qwen3-Embedding-8B model in a GPU-enabled RunPod environment.
+
+The resulting embeddings are provided in `dataset/2_screening_extraction/par_embeddings.npy` and `dataset/3_narrative_taxonomy/narrative_embeddings.npy`, respectively.
+
+The published embedding files allow researchers to reproduce downstream analyses without repeating this computationally intensive process.
+
 ### Accessing the Repository
 
 Clone the repository and retrieve the files managed through Git LFS:
