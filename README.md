@@ -11,7 +11,7 @@ The approach is designed to reduce the dependence on extensive manual annotation
 
 The methodology is developed and demonstrated through an analysis of Greek parliamentary discourse surrounding the 2023 Tempi railway disaster. Using a corpus of 216,396 parliamentary paragraphs, CART combines paragraph-level thematic filtering, LLM-assisted narrative extraction, and narrative-level clustering to identify recurring political narratives concerning the disaster, institutional responsibility, accountability, and railway safety.
 
-The resulting taxonomy comprises ten political narrative families, providing a structured representation of the dominant narrative patterns emerging from parliamentary debates and enabling their subsequent comparative and temporal analysis.
+The resulting taxonomy comprises ten recurring political narrative families, providing a structured representation of the narrative patterns identified in parliamentary debates and supporting their comparative and temporal analysis.
 
 This repository provides the analytical notebooks, datasets, intermediate outputs, original LLM prompts, and visualizations documenting the complete research workflow.
 
@@ -203,7 +203,7 @@ To assess the quality of the LLM-assisted narrative extraction, a human annotati
 The evaluation followed a forced-choice design in which annotators examined parliamentary paragraphs and selected the response that best represented the meaning of each paragraph from a set of candidate options.
 The repository provides the annotation materials, individual annotation files, and analytical notebooks used to examine the evaluation results. 
 
-Across five annotators, the LLM-generated narrative was selected as the best-fitting interpretation of the source paragraph in 84.6% of annotations, with an annotator-level standard error of 1.21 percentage points.
+Across five annotators, the extracted narrative was selected as the best-fitting interpretation of the source paragraph in 84.6% of forced-choice annotation responses, with an annotator-level standard error of 1.21 percentage points.
 
 ### Annotation Materials
 
