@@ -225,7 +225,7 @@ The resulting taxonomy captures distinct but related interpretations of the disa
 
 ### Discovered Narrative Families
 
-The following table presents the ten narrative families identified through the final K-SIL clustering solution.
+The following table presents the ten narrative families identified through the final K-Sil clustering solution.
 
 | Cluster | Narrative Family |
 |---|---|
@@ -246,7 +246,7 @@ The complete narrative-level clustering output is available in [`taxonomy/narrat
 
 ### Narrative Family Distribution and Cluster Quality
 
-The following visualization summarizes the distribution and clustering quality of the ten narrative families identified by K-SIL.
+The following visualization summarizes the distribution and clustering quality of the ten narrative families identified by K-Sil.
 
 For each cluster, the blue bars indicate its share of the extracted narrative statements, while the red bars represent its mean silhouette coefficient, providing an indication of cluster cohesion and separation in the semantic embedding space.
 
