@@ -386,6 +386,7 @@ For each cluster, the blue bars indicate its share of the extracted narrative st
 ### Temporal Evolution of Narrative Families
 
 Beyond identifying recurring narrative families, the resulting taxonomy enables the examination of how political narratives evolve over time.
+  
 The following visualization presents the monthly distribution of the discovered narrative families across the parliamentary discourse, using a three-month centered rolling mean.
 
 ![Temporal Evolution of Parliamentary Narrative Families](figs/evolution.png)
