@@ -300,6 +300,45 @@ flowchart LR
 
 The annotation study focuses on the quality of the extracted narrative statements rather than the direct evaluation of the final narrative taxonomy.
 
+<details>
+<summary><strong>📝 Try the Annotation Task</strong></summary>
+
+<p>Read the parliamentary paragraph and select the narrative that best represents its meaning.</p>
+
+<p><em>There are no objectively correct answers. Each option represents a different interpretation.</em></p>
+
+<h4>Example 1 of 5</h4>
+
+<p><strong>Parliamentary paragraph</strong></p>
+
+<blockquote>
+Τα ερωτήματα, λοιπόν –και καταλήγω-, είναι συγκεκριμένα και το ΠΑΣΟΚ τα θέτει συνέχεια και με τον Πρόεδρο. Μην ψάχνετε άλλοθι στο παρελθόν. Η δικογραφία μιλάει για τη δική σας περίοδο, για τα δικά σας στελέχη, για δικές σας πράξεις και παραλείψεις. Και η κοινωνία θα ζητήσει λογαριασμό!
+</blockquote>
+
+<p><strong>Which narrative best represents the paragraph?</strong></p>
+
+<details>
+<summary>◯ A. Crash blame on EU privatization policies misrepresents systemic causes.</summary>
+<p><strong>Source:</strong> Human annotation</p>
+</details>
+
+<details>
+<summary>◯ B. Past governments share equal Tempi responsibility.</summary>
+<p><strong>Source:</strong> Human annotation</p>
+</details>
+
+<details>
+<summary>◯ C. Government's omissions require accountability for Tempi crash.</summary>
+<p><strong>Source:</strong> CART-generated narrative</p>
+</details>
+
+<details>
+<summary>◯ D. None of the above</summary>
+<p><strong>Source:</strong> No narrative selected</p>
+</details>
+
+</details>
+
 ## From Parliamentary Paragraphs to Narrative Families
 
 The application of CART to Greek parliamentary discourse surrounding the Tempi railway disaster resulted in the extraction of **4,537 political narrative statements**, organized into **ten recurring narrative families**.
