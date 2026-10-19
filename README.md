@@ -375,6 +375,8 @@ These labels summarize recurring claims expressed in parliamentary discourse and
 
 The complete narrative-level clustering output is available in [`taxonomy/narrative_taxonomy_ksil.csv`](taxonomy/narrative_taxonomy_ksil.csv).
 
+> **Disclaimer:** The narrative families presented in this taxonomy reflect claims, interpretations, and political positions expressed in the analyzed parliamentary discourse. They do not represent the views, opinions, or factual assertions of the authors.
+
 ### Narrative Family Distribution and Cluster Quality
 
 The following visualization summarizes the distribution and clustering quality of the ten narrative families identified by K-Sil.
