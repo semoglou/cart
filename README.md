@@ -186,6 +186,16 @@ Some computationally intensive procedures are retained in the notebooks but are 
 
 Researchers can therefore follow the documented workflow and examine its intermediate results without necessarily regenerating all embeddings or repeating the original LLM inference.
 
+### Final Taxonomy Files
+
+The [`taxonomy/`](taxonomy/) directory provides the final CART taxonomy outputs at different levels of detail, allowing researchers to examine the discovered narrative families and their relationship to the original parliamentary discourse.
+
+| File | Description |
+|---|---|
+| [`narrative_taxonomy_ksil.csv`](taxonomy/narrative_taxonomy_ksil.csv) | Extracted narrative statements and their corresponding taxonomy assignments (narrative family labels). |
+| [`narrative_taxonomy_ksil_with_paragraphs.csv`](taxonomy/narrative_taxonomy_ksil_with_paragraphs.csv) | Extracted narrative statements, their source parliamentary paragraphs, and corresponding cluster labels and narrative family assignments. |
+| [`CART_ksil_taxonomy_full.csv`](taxonomy/CART_ksil_taxonomy_full.csv) | Extended taxonomy output containing additional information associated with the narrative clustering results. |
+
 ## Human Annotation and Evaluation
 
 To assess the quality of the LLM-assisted narrative extraction, a human annotation study was conducted to examine how well the generated narrative statements represent the interpretations expressed in their source parliamentary paragraphs.
