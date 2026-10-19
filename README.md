@@ -231,7 +231,7 @@ The annotation study focuses on the quality of the extracted narrative statement
 
 The application of CART to Greek parliamentary discourse surrounding the Tempi railway disaster resulted in the extraction of **4,537 political narrative statements**, organized into **ten recurring narrative families**.
 
-The resulting taxonomy captures distinct but related interpretations of the disaster, including institutional responsibility, accountability, railway safety, systemic governance failures, privatization, and political exploitation.
+The resulting taxonomy captures distinct but related narratives expressed in parliamentary discourse, addressing institutional responsibility, accountability, railway safety, systemic governance failures, privatization, and political exploitation.
 
 ### Discovered Narrative Families
 
