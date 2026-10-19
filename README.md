@@ -202,7 +202,8 @@ The [`taxonomy/`](taxonomy/) directory provides the final CART taxonomy outputs 
 
 To assess the quality of the LLM-assisted narrative extraction, a human annotation study was conducted to examine how well the generated narrative statements represent the interpretations expressed in their source parliamentary paragraphs.
 
-The evaluation followed a forced-choice design in which annotators examined parliamentary paragraphs and selected the response that best represented the meaning of each paragraph from a set of candidate options.
+The evaluation followed a forced-choice design in which annotators examined parliamentary paragraphs and selected the response that best represented the meaning of each paragraph from a set of candidate options.  
+
 The repository provides the annotation materials, individual annotation files, and analytical notebooks used to examine the evaluation results. 
 
 Across five annotators, the extracted narrative was selected as the best-fitting interpretation of the source paragraph in 84.6% of forced-choice annotation responses, with an annotator-level standard error of 1.21 percentage points.
