@@ -89,6 +89,106 @@ cart/
     └── CART_ksil_taxonomy_full.csv
 ```
 
+## Repository Structure
+
+<details>
+<summary>📁 <b><a href="framework/">framework/</a></b></summary>
+
+```text
+framework/
+├── 00_dataset_integrity_check.ipynb
+├── 01_preparation.ipynb
+├── 02_screening_extraction.ipynb
+└── 03_narrative_clustering.ipynb
+```
+
+</details>
+
+<details>
+<summary>📁 <b><a href="dataset/">dataset/</a></b></summary>
+
+```text
+dataset/
+├── 1_preparation/
+│   ├── 01_paragraphs_clean.csv.zip
+│   ├── 01_stopwords_all.txt
+│   └── 05_Tempi_paragraphs_clean.csv.zip
+│
+├── 2_screening_extraction/
+│   ├── 02_cluster_metadata.csv
+│   ├── 02_clusters_with_titles.csv
+│   ├── 02_dataset_clustered.csv.zip
+│   ├── 03_tempi_df_dataset.csv
+│   ├── 04_tempi_df_R1_narratives.csv
+│   ├── 05_tempi_df_R1_extra_narratives.csv
+│   ├── 05_tempi_df_R1_invalid_jsons.csv
+│   ├── 06_tempi_df_R1_final_narratives.csv
+│   └── par_embeddings.npy
+│
+└── 3_narrative_taxonomy/
+    ├── narrative_embeddings.npy
+    └── narrative_taxonomy_ksil.csv
+```
+
+</details>
+
+<details>
+<summary>📁 <b><a href="annotation/">annotation/</a></b></summary>
+
+```text
+annotation/
+├── analysis/
+│   ├── annotation_results_analysis.ipynb
+│   └── error_analysis_similarity.ipynb
+│
+├── annotations/
+│   ├── annotation_1.xlsx
+│   ├── annotation_2.xlsx
+│   ├── annotation_3.xlsx
+│   ├── annotation_4.xlsx
+│   └── annotation_5.xlsx
+│
+├── guidelines.pdf
+├── annotation_sheet.xlsx
+└── narratives_clean.xlsx
+```
+
+</details>
+
+<details>
+<summary>📁 <b><a href="prompts_used/">prompts_used/</a></b></summary>
+
+```text
+prompts_used/
+├── 02_cluster_titles_prompt.txt
+├── 02_narrative_extraction_prompt.txt
+└── 02_narrative_extraction_retry_prompt.txt
+```
+
+</details>
+
+<details>
+<summary>📁 <b><a href="embedding_generation/">embedding_generation/</a></b></summary>
+
+```text
+embedding_generation/
+└── runpod_embeddings.ipynb
+```
+
+</details>
+
+<details>
+<summary>📁 <b><a href="taxonomy/">taxonomy/</a></b></summary>
+
+```text
+taxonomy/
+├── narrative_taxonomy_ksil_with_paragraphs.csv
+├── narrative_taxonomy_ksil.csv
+└── CART_ksil_taxonomy_full.csv
+```
+
+</details>
+
 ## Workflow
 
 The CART implementation is organized into three sequential analytical notebooks, accompanied by a separate dataset integrity verification notebook. Together, they document the transformation of parliamentary discourse into a structured taxonomy of recurring political narratives.
