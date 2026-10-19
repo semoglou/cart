@@ -81,7 +81,7 @@ cart/
 │   └── 02_narrative_extraction_retry_prompt.txt
 │
 ├── embedding_generation/
-|   └── runpod_embeddings.ipynb
+│   └── runpod_embeddings.ipynb
 │
 └── taxonomy/
     ├── narrative_taxonomy_ksil_with_paragraphs.csv
