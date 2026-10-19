@@ -1,7 +1,7 @@
 # CART
 ### Clustering-based Analysis of Recurring narratives for Taxonomy construction
 
-CART is an unsupervised, clustering-based framework designed to identify, extract, and organize recurring political narratives from large-scale textual data without requiring predefined narrative categories or extensively annotated training datasets.
+CART is an unsupervised, clustering-based framework for the data-driven identification, extraction, and organization of recurring political narratives from large-scale textual data, without requiring predefined narrative categories or extensively annotated training datasets.
 
 Constructing a taxonomy of political narratives traditionally requires substantial manual effort, including the identification of relevant textual material, the interpretation of recurring narrative patterns, and the development of a classification scheme. These tasks become increasingly challenging when analyzing large collections of political discourse, where narratives may be expressed through diverse linguistic formulations and evolve over time.
 
