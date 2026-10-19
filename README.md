@@ -191,8 +191,9 @@ Researchers can therefore follow the documented workflow and examine its interme
 To assess the quality of the LLM-assisted narrative extraction, a human annotation study was conducted to examine how well the generated narrative statements represent the interpretations expressed in their source parliamentary paragraphs.
 
 The evaluation followed a forced-choice design in which annotators examined parliamentary paragraphs and selected the response that best represented the meaning of each paragraph from a set of candidate options.
+The repository provides the annotation materials, individual annotation files, and analytical notebooks used to examine the evaluation results. 
 
-The repository provides the annotation materials, individual annotation files, and analytical notebooks used to examine the evaluation results.
+Across five annotators, the LLM-generated narrative was selected as the best-fitting interpretation of the source paragraph in 84.6% of annotations, with an annotator-level standard error of 1.21 percentage points.
 
 ### Annotation Materials
 
