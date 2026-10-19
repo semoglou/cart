@@ -305,7 +305,7 @@ The three main analytical notebooks follow the successive stages of the CART met
 
 The repository includes published intermediate datasets and semantic embeddings that can be loaded as checkpoints.
 
-This allows researchers to inspect the workflow and reproduce downstream analyses without necessarily repeating the most computationally intensive stages.
+These checkpoints allow researchers to inspect intermediate results and rerun selected downstream analyses without necessarily regenerating semantic embeddings or repeating the original LLM inference.
 
 ### Computational Considerations
 
