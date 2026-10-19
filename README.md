@@ -216,18 +216,21 @@ flowchart LR
 
     P["<b>PARLIAMENTARY PARAGRAPH</b><br/><br/>Όλη αυτή η αντιθεσμική μεθόδευση<br/>εντάσσεται στην επιχείρηση συγκάλυψης<br/>του εγκλήματος των Τεμπών και απόσεισης<br/>των ευθυνών από τους Υπουργούς<br/>της Κυβέρνησης της Νέας Δημοκρατίας."]
 
-    Q["<b>HUMAN ANNOTATION TASK</b><br/><br/>Which candidate best represents<br/>the meaning of the paragraph?"]
+    Q["<b>HUMAN ANNOTATION TASK</b><br/><br/>Which candidate best represents the meaning of the paragraph?"]
 
-    A["<b>✓ EXTRACTED NARRATIVE</b><br/><br/>Government cover-up operation<br/>evading ministerial accountability"]
+    A["<b>✓ EXTRACTED NARRATIVE</b><br/><br/>Government cover-up operation evading ministerial accountability"]
 
-    B["<b>ALTERNATIVE NARRATIVE</b><br/><br/>Institutional procedures delayed<br/>ministerial accountability."]
+    B["<b>ALTERNATIVE NARRATIVE</b><br/><br/>Institutional procedures delayed ministerial accountability."]
 
-    C["<b>UNRELATED NARRATIVE</b><br/><br/>Systemic railway neglect caused<br/>preventable Tempi tragedy."]
+    C["<b>UNRELATED NARRATIVE</b><br/><br/>Systemic railway neglect caused preventable Tempi tragedy."]
+
+    D["<b>NONE OF THE ABOVE</b>"]
 
     P --> Q
     Q --> A
     Q --> B
     Q --> C
+    Q --> D
 
     classDef paragraph fill:#EFF6FF,stroke:#3B82F6,stroke-width:1.5px,color:#1E3A5F
     classDef question fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,color:#334155
@@ -237,7 +240,7 @@ flowchart LR
     class P paragraph
     class Q question
     class A correct
-    class B,C alternative
+    class B,C,D alternative
 ```
 
 ### Annotation Materials
