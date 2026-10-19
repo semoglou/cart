@@ -19,7 +19,7 @@ This repository provides the analytical notebooks, datasets, intermediate output
 
 CART employs a three-stage workflow that progressively transforms unstructured parliamentary discourse into an interpretable taxonomy of recurring political narratives.
 
-The first stage identifies thematically relevant paragraphs through semantic representations, clustering, and confidence-based screening. The second stage employs DeepSeek-R1 to extract narrative statements from the selected material. Finally, the extracted statements are semantically grouped into recurring narrative families through narrative-level clustering.
+The first stage identifies thematically relevant paragraphs using semantic embeddings, paragraph-level clustering, and [CAKE](https://www.sciencedirect.com/science/article/pii/S2666827026000800?via%3Dihub)-based confidence screening. The second stage employs DeepSeek-R1 to extract narrative statements from the selected parliamentary material. Finally, the extracted narratives are organized into recurring families through narrative-level clustering, using [Composite Silhouette](https://link.springer.com/chapter/10.1007/978-3-032-37654-1_38) for cluster-number selection and [K-Sil](https://arxiv.org/abs/2506.12878) for taxonomy construction.
 
 ![CART Research Pipeline](figs/pipeline.png)
 
