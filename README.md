@@ -29,110 +29,99 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 
 ## Repository Structure
 
-<details open>
-<summary>📁 <b><a href="./">cart/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="framework/">framework/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;📓 <a href="framework/00_dataset_integrity_check.ipynb">00_dataset_integrity_check.ipynb</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📓 <a href="framework/01_preparation.ipynb">01_preparation.ipynb</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📓 <a href="framework/02_screening_extraction.ipynb">02_screening_extraction.ipynb</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📓 <a href="framework/03_narrative_clustering.ipynb">03_narrative_clustering.ipynb</a>
-
-</details>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="dataset/">dataset/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="dataset/1_preparation/">1_preparation/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/1_preparation/01_paragraphs_clean.csv.zip">01_paragraphs_clean.csv.zip</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/1_preparation/01_stopwords_all.txt">01_stopwords_all.txt</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/1_preparation/05_Tempi_paragraphs_clean.csv.zip">05_Tempi_paragraphs_clean.csv.zip</a>
-
-</details>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="dataset/2_screening_extraction/">2_screening_extraction/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/2_screening_extraction/02_cluster_metadata.csv">02_cluster_metadata.csv</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/2_screening_extraction/02_clusters_with_titles.csv">02_clusters_with_titles.csv</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/2_screening_extraction/02_dataset_clustered.csv.zip">02_dataset_clustered.csv.zip</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/2_screening_extraction/03_tempi_df_dataset.csv">03_tempi_df_dataset.csv</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/2_screening_extraction/04_tempi_df_R1_narratives.csv">04_tempi_df_R1_narratives.csv</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/2_screening_extraction/05_tempi_df_R1_extra_narratives.csv">05_tempi_df_R1_extra_narratives.csv</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/2_screening_extraction/05_tempi_df_R1_invalid_jsons.csv">05_tempi_df_R1_invalid_jsons.csv</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/2_screening_extraction/06_tempi_df_R1_final_narratives.csv">06_tempi_df_R1_final_narratives.csv</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/2_screening_extraction/par_embeddings.npy">par_embeddings.npy</a>
-
-</details>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="dataset/3_narrative_taxonomy/">3_narrative_taxonomy/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/3_narrative_taxonomy/narrative_embeddings.npy">narrative_embeddings.npy</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="dataset/3_narrative_taxonomy/narrative_taxonomy_ksil.csv">narrative_taxonomy_ksil.csv</a>
-
-</details>
-
-</details>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="annotation/">annotation/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="annotation/analysis/">analysis/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;📓 <a href="annotation/analysis/annotation_results_analysis.ipynb">annotation_results_analysis.ipynb</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📓 <a href="annotation/analysis/error_analysis_similarity.ipynb">error_analysis_similarity.ipynb</a>
-
-</details>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="annotation/annotations/">annotations/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;📊 <a href="annotation/annotations/annotation_1.xlsx">annotation_1.xlsx</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📊 <a href="annotation/annotations/annotation_2.xlsx">annotation_2.xlsx</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📊 <a href="annotation/annotations/annotation_3.xlsx">annotation_3.xlsx</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📊 <a href="annotation/annotations/annotation_4.xlsx">annotation_4.xlsx</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📊 <a href="annotation/annotations/annotation_5.xlsx">annotation_5.xlsx</a>
-
-</details>
-
-&nbsp;&nbsp;&nbsp;&nbsp;📕 <a href="annotation/guidelines.pdf">guidelines.pdf</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📊 <a href="annotation/annotation_sheet.xlsx">annotation_sheet.xlsx</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📊 <a href="annotation/narratives_clean.xlsx">narratives_clean.xlsx</a>
-
-</details>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="prompts_used/">prompts_used/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="prompts_used/02_cluster_titles_prompt.txt">02_cluster_titles_prompt.txt</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="prompts_used/02_narrative_extraction_prompt.txt">02_narrative_extraction_prompt.txt</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="prompts_used/02_narrative_extraction_retry_prompt.txt">02_narrative_extraction_retry_prompt.txt</a>
-
-</details>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="embedding_generation/">embedding_generation/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;📓 <a href="embedding_generation/runpod_embeddings.ipynb">runpod_embeddings.ipynb</a>
-
-</details>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<details>
-<summary>📁 <b><a href="taxonomy/">taxonomy/</a></b></summary>
-
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="taxonomy/narrative_taxonomy_ksil_with_paragraphs.csv">narrative_taxonomy_ksil_with_paragraphs.csv</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="taxonomy/narrative_taxonomy_ksil.csv">narrative_taxonomy_ksil.csv</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="taxonomy/CART_ksil_taxonomy_full.csv">CART_ksil_taxonomy_full.csv</a>
-
-</details>
-
-</details>
+<strong>📁 cart/</strong>
+<ul>
+<li><details>
+<summary>📁 <a href="framework/"><strong>framework/</strong></a></summary>
+<ul>
+<li>📓 <a href="framework/00_dataset_integrity_check.ipynb">00_dataset_integrity_check.ipynb</a></li>
+<li>📓 <a href="framework/01_preparation.ipynb">01_preparation.ipynb</a></li>
+<li>📓 <a href="framework/02_screening_extraction.ipynb">02_screening_extraction.ipynb</a></li>
+<li>📓 <a href="framework/03_narrative_clustering.ipynb">03_narrative_clustering.ipynb</a></li>
+</ul>
+</details></li>
+<li><details>
+<summary>📁 <a href="dataset/"><strong>dataset/</strong></a></summary>
+<ul>
+<li><details>
+<summary>📁 <a href="dataset/1_preparation/"><strong>1_preparation/</strong></a></summary>
+<ul>
+<li>📄 <a href="dataset/1_preparation/01_paragraphs_clean.csv.zip">01_paragraphs_clean.csv.zip</a></li>
+<li>📄 <a href="dataset/1_preparation/01_stopwords_all.txt">01_stopwords_all.txt</a></li>
+<li>📄 <a href="dataset/1_preparation/05_Tempi_paragraphs_clean.csv.zip">05_Tempi_paragraphs_clean.csv.zip</a></li>
+</ul>
+</details></li>
+<li><details>
+<summary>📁 <a href="dataset/2_screening_extraction/"><strong>2_screening_extraction/</strong></a></summary>
+<ul>
+<li>📄 <a href="dataset/2_screening_extraction/02_cluster_metadata.csv">02_cluster_metadata.csv</a></li>
+<li>📄 <a href="dataset/2_screening_extraction/02_clusters_with_titles.csv">02_clusters_with_titles.csv</a></li>
+<li>📄 <a href="dataset/2_screening_extraction/02_dataset_clustered.csv.zip">02_dataset_clustered.csv.zip</a></li>
+<li>📄 <a href="dataset/2_screening_extraction/03_tempi_df_dataset.csv">03_tempi_df_dataset.csv</a></li>
+<li>📄 <a href="dataset/2_screening_extraction/04_tempi_df_R1_narratives.csv">04_tempi_df_R1_narratives.csv</a></li>
+<li>📄 <a href="dataset/2_screening_extraction/05_tempi_df_R1_extra_narratives.csv">05_tempi_df_R1_extra_narratives.csv</a></li>
+<li>📄 <a href="dataset/2_screening_extraction/05_tempi_df_R1_invalid_jsons.csv">05_tempi_df_R1_invalid_jsons.csv</a></li>
+<li>📄 <a href="dataset/2_screening_extraction/06_tempi_df_R1_final_narratives.csv">06_tempi_df_R1_final_narratives.csv</a></li>
+<li>📄 <a href="dataset/2_screening_extraction/par_embeddings.npy">par_embeddings.npy</a></li>
+</ul>
+</details></li>
+<li><details>
+<summary>📁 <a href="dataset/3_narrative_taxonomy/"><strong>3_narrative_taxonomy/</strong></a></summary>
+<ul>
+<li>📄 <a href="dataset/3_narrative_taxonomy/narrative_embeddings.npy">narrative_embeddings.npy</a></li>
+<li>📄 <a href="dataset/3_narrative_taxonomy/narrative_taxonomy_ksil.csv">narrative_taxonomy_ksil.csv</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li><details>
+<summary>📁 <a href="annotation/"><strong>annotation/</strong></a></summary>
+<ul>
+<li><details>
+<summary>📁 <a href="annotation/analysis/"><strong>analysis/</strong></a></summary>
+<ul>
+<li>📓 <a href="annotation/analysis/annotation_results_analysis.ipynb">annotation_results_analysis.ipynb</a></li>
+<li>📓 <a href="annotation/analysis/error_analysis_similarity.ipynb">error_analysis_similarity.ipynb</a></li>
+</ul>
+</details></li>
+<li><details>
+<summary>📁 <a href="annotation/annotations/"><strong>annotations/</strong></a></summary>
+<ul>
+<li>📊 <a href="annotation/annotations/annotation_1.xlsx">annotation_1.xlsx</a></li>
+<li>📊 <a href="annotation/annotations/annotation_2.xlsx">annotation_2.xlsx</a></li>
+<li>📊 <a href="annotation/annotations/annotation_3.xlsx">annotation_3.xlsx</a></li>
+<li>📊 <a href="annotation/annotations/annotation_4.xlsx">annotation_4.xlsx</a></li>
+<li>📊 <a href="annotation/annotations/annotation_5.xlsx">annotation_5.xlsx</a></li>
+</ul>
+</details></li>
+<li>📕 <a href="annotation/guidelines.pdf">guidelines.pdf</a></li>
+<li>📊 <a href="annotation/annotation_sheet.xlsx">annotation_sheet.xlsx</a></li>
+<li>📊 <a href="annotation/narratives_clean.xlsx">narratives_clean.xlsx</a></li>
+</ul>
+</details></li>
+<li><details>
+<summary>📁 <a href="prompts_used/"><strong>prompts_used/</strong></a></summary>
+<ul>
+<li>📄 <a href="prompts_used/02_cluster_titles_prompt.txt">02_cluster_titles_prompt.txt</a></li>
+<li>📄 <a href="prompts_used/02_narrative_extraction_prompt.txt">02_narrative_extraction_prompt.txt</a></li>
+<li>📄 <a href="prompts_used/02_narrative_extraction_retry_prompt.txt">02_narrative_extraction_retry_prompt.txt</a></li>
+</ul>
+</details></li>
+<li><details>
+<summary>📁 <a href="embedding_generation/"><strong>embedding_generation/</strong></a></summary>
+<ul>
+<li>📓 <a href="embedding_generation/runpod_embeddings.ipynb">runpod_embeddings.ipynb</a></li>
+</ul>
+</details></li>
+<li><details>
+<summary>📁 <a href="taxonomy/"><strong>taxonomy/</strong></a></summary>
+<ul>
+<li>📄 <a href="taxonomy/narrative_taxonomy_ksil_with_paragraphs.csv">narrative_taxonomy_ksil_with_paragraphs.csv</a></li>
+<li>📄 <a href="taxonomy/narrative_taxonomy_ksil.csv">narrative_taxonomy_ksil.csv</a></li>
+<li>📄 <a href="taxonomy/CART_ksil_taxonomy_full.csv">CART_ksil_taxonomy_full.csv</a></li>
+</ul>
+</details></li>
+</ul>
 
 ## Workflow
 
