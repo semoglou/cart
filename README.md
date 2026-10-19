@@ -237,71 +237,55 @@ The annotation study focuses on the quality of the extracted narrative statement
 
 The application of CART to Greek parliamentary discourse surrounding the Tempi railway disaster resulted in the extraction of **4,537 political narrative statements**, organized into **ten recurring narrative families**.
 
+The resulting taxonomy captures distinct but related narratives expressed in parliamentary discourse, addressing institutional responsibility, accountability, railway safety, systemic governance failures, privatization, and political exploitation.
+
 ```mermaid
+flowchart TB
 
-flowchart LR
-
-    subgraph P["PARLIAMENTARY PARAGRAPHS"]
-
+    subgraph P["1. PARLIAMENTARY PARAGRAPHS"]
         direction TB
 
-        P1["Η Νέα Δημοκρατία, λοιπόν, θεσμικά με τις πρωτοβουλίες της στοχεύει στην πλήρη διαλεύκανση και στην ταχύτατη εκδίκαση της τραγωδίας στα Τέμπη, όταν δυστυχώς η Αντιπολίτευση αναζητά στον πόνο των ανθρώπων την πολιτική εκμετάλλευση και μόνο.<br/><br/><small>(2024-03-26_148_308_p1)</small>"]
+        P1["Η Νέα Δημοκρατία, λοιπόν, θεσμικά<br/>με τις πρωτοβουλίες της στοχεύει<br/>στην πλήρη διαλεύκανση και στην<br/>ταχύτατη εκδίκαση της τραγωδίας<br/>στα Τέμπη, όταν δυστυχώς η<br/>Αντιπολίτευση αναζητά στον πόνο<br/>των ανθρώπων την πολιτική<br/>εκμετάλλευση και μόνο.<br/><br/>(2024-03-26_148_308_p1)"]
 
-        P2["Κυρίες και κύριοι συνάδελφοι της Αντιπολίτευσης, μη έχοντας ουσιαστικό αντιπολιτευτικό λόγο, αλλά και παραγωγικές θέσεις που θα ενισχύσουν το κοινοβουλευτικό έργο, καταφεύγετε δυστυχώς -όπως είπα- στην εργαλειοποίηση μιας τραγωδίας, όπως είναι το δυστύχημα των Τεμπών.<br/><br/><small>(2024-03-27_149_462_p2)</small>"]
+        P2["Κυρίες και κύριοι συνάδελφοι της<br/>Αντιπολίτευσης, μη έχοντας ουσιαστικό<br/>αντιπολιτευτικό λόγο, αλλά και<br/>παραγωγικές θέσεις που θα ενισχύσουν<br/>το κοινοβουλευτικό έργο, καταφεύγετε<br/>δυστυχώς -όπως είπα- στην<br/>εργαλειοποίηση μιας τραγωδίας,<br/>όπως είναι το δυστύχημα των Τεμπών.<br/><br/>(2024-03-27_149_462_p2)"]
 
-        P3["Επί έναν ολόκληρο χρόνο η Κυβέρνηση της Νέας Δημοκρατίας επιχείρησε να θάψει την υπόθεση των Τεμπών και επιστράτευσε γι’ αυτό τα πάντα.<br/><br/><small>(2024-03-28_150_389_p3)</small>"]
-
+        P3["Επί έναν ολόκληρο χρόνο η Κυβέρνηση<br/>της Νέας Δημοκρατίας επιχείρησε<br/>να θάψει την υπόθεση των Τεμπών<br/>και επιστράτευσε γι’ αυτό τα πάντα.<br/><br/>(2024-03-28_150_389_p3)"]
     end
 
-    subgraph N["EXTRACTED NARRATIVES"]
-
+    subgraph N["2. EXTRACTED NARRATIVES"]
         direction TB
 
         N1["Opposition exploits tragedy<br/>for political gain."]
 
-        N2["Opposition instrumentalizes<br/>Tempi tragedy for political purposes."]
+        N2["Opposition instrumentalizes Tempi<br/>tragedy for political purposes."]
 
         N3["Government cover-up obstructed<br/>Tempi crash accountability."]
-
     end
 
-    subgraph F["NARRATIVE FAMILIES"]
-
+    subgraph F["3. NARRATIVE FAMILIES"]
         direction TB
 
         F8["<b>FAMILY 8</b><br/><br/>Opposition exploits the tragedy<br/>for political gain"]
 
         F1["<b>FAMILY 1</b><br/><br/>Government cover-up<br/>of Tempi accountability"]
-
     end
 
     P1 --> N1
-
     P2 --> N2
-
     P3 --> N3
 
     N1 --> F8
-
     N2 --> F8
-
     N3 --> F1
 
     classDef paragraph fill:#EFF6FF,stroke:#3B82F6,stroke-width:1.5px,color:#1E3A5F
-
     classDef narrative fill:#F0FDF4,stroke:#22C55E,stroke-width:1.5px,color:#14532D
-
     classDef family fill:#FAF5FF,stroke:#A855F7,stroke-width:2px,color:#581C87
 
     class P1,P2,P3 paragraph
-
     class N1,N2,N3 narrative
-
     class F8,F1 family
-
 ```
-
-The resulting taxonomy captures distinct but related narratives expressed in parliamentary discourse, addressing institutional responsibility, accountability, railway safety, systemic governance failures, privatization, and political exploitation.
 
 ### Discovered Narrative Families
 
