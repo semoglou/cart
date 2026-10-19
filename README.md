@@ -202,7 +202,7 @@ The repository provides the annotation materials, individual annotation files, a
 |---|---|
 | [`guidelines.pdf`](annotation/guidelines.pdf) | Instructions and criteria used during the annotation process. |
 | [`annotation_sheet.xlsx`](annotation/annotation_sheet.xlsx) | Spreadsheet template used for collecting annotation responses. |
-| [`narratives_clean.xlsx`](annotation/narratives_clean.xlsx) | Narrative data prepared for human annotation. |
+| [`narratives_clean.xlsx`](annotation/narratives_clean.xlsx) | Annotation examples containing source parliamentary paragraphs and candidate narrative statements, including the LLM-generated narratives and alternative responses used in the evaluation task. |
 | [`annotations/`](annotation/annotations/) | Individual annotation spreadsheets containing the collected responses. |
 
 ### Evaluation and Error Analysis
