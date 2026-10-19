@@ -88,6 +88,7 @@ cart/
     ├── narrative_taxonomy_ksil.csv
     └── CART_ksil_taxonomy_full.csv
 ```
+
 ## Workflow
 
 The CART implementation is organized into three sequential analytical notebooks, accompanied by a separate dataset integrity verification notebook. Together, they document the transformation of parliamentary discourse into a structured taxonomy of recurring political narratives.
@@ -214,7 +215,7 @@ Across five annotators, the extracted narrative was selected as the best-fitting
 ```mermaid
 flowchart LR
 
-    P["<b>PARLIAMENTARY PARAGRAPH</b><br/><br/>Όλη αυτή η αντιθεσμική μεθόδευση<br/>εντάσσεται στην επιχείρηση συγκάλυψης<br/>του εγκλήματος των Τεμπών και απόσεισης<br/>των ευθυνών από τους Υπουργούς<br/>της Κυβέρνησης της Νέας Δημοκρατίας."]
+    P["<b>PARLIAMENTARY PARAGRAPH</b><br/><br/>Όλη αυτή η αντιθεσμική μεθόδευση εντάσσεται στην επιχείρηση συγκάλυψης του εγκλήματος των Τεμπών<br/>και απόσεισης των ευθυνών από τους Υπουργούς της Κυβέρνησης της Νέας Δημοκρατίας."]
 
     Q["<b>HUMAN ANNOTATION TASK</b><br/><br/>Which candidate best represents the meaning of the paragraph?"]
 
