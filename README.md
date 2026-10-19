@@ -33,7 +33,6 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 
 <details>
 <summary>📁 <a href="framework/"><strong>framework/</strong></a></summary>
-
 <ul>
 <li>📓 <a href="framework/00_dataset_integrity_check.ipynb">00_dataset_integrity_check.ipynb</a></li>
 <li>📓 <a href="framework/01_preparation.ipynb">01_preparation.ipynb</a></li>
@@ -44,20 +43,21 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 
 <details>
 <summary>📁 <a href="dataset/"><strong>dataset/</strong></a></summary>
-
+<ul>
+<li>
 <details>
 <summary>📁 <a href="dataset/1_preparation/"><strong>1_preparation/</strong></a></summary>
-
 <ul>
 <li>📄 <a href="dataset/1_preparation/01_paragraphs_clean.csv.zip">01_paragraphs_clean.csv.zip</a></li>
 <li>📄 <a href="dataset/1_preparation/01_stopwords_all.txt">01_stopwords_all.txt</a></li>
 <li>📄 <a href="dataset/1_preparation/05_Tempi_paragraphs_clean.csv.zip">05_Tempi_paragraphs_clean.csv.zip</a></li>
 </ul>
 </details>
+</li>
 
+<li>
 <details>
 <summary>📁 <a href="dataset/2_screening_extraction/"><strong>2_screening_extraction/</strong></a></summary>
-
 <ul>
 <li>📄 <a href="dataset/2_screening_extraction/02_cluster_metadata.csv">02_cluster_metadata.csv</a></li>
 <li>📄 <a href="dataset/2_screening_extraction/02_clusters_with_titles.csv">02_clusters_with_titles.csv</a></li>
@@ -70,33 +70,36 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 <li>📄 <a href="dataset/2_screening_extraction/par_embeddings.npy">par_embeddings.npy</a></li>
 </ul>
 </details>
+</li>
 
+<li>
 <details>
 <summary>📁 <a href="dataset/3_narrative_taxonomy/"><strong>3_narrative_taxonomy/</strong></a></summary>
-
 <ul>
 <li>📄 <a href="dataset/3_narrative_taxonomy/narrative_embeddings.npy">narrative_embeddings.npy</a></li>
 <li>📄 <a href="dataset/3_narrative_taxonomy/narrative_taxonomy_ksil.csv">narrative_taxonomy_ksil.csv</a></li>
 </ul>
 </details>
-
+</li>
+</ul>
 </details>
 
 <details>
 <summary>📁 <a href="annotation/"><strong>annotation/</strong></a></summary>
-
+<ul>
+<li>
 <details>
 <summary>📁 <a href="annotation/analysis/"><strong>analysis/</strong></a></summary>
-
 <ul>
 <li>📓 <a href="annotation/analysis/annotation_results_analysis.ipynb">annotation_results_analysis.ipynb</a></li>
 <li>📓 <a href="annotation/analysis/error_analysis_similarity.ipynb">error_analysis_similarity.ipynb</a></li>
 </ul>
 </details>
+</li>
 
+<li>
 <details>
 <summary>📁 <a href="annotation/annotations/"><strong>annotations/</strong></a></summary>
-
 <ul>
 <li>📊 <a href="annotation/annotations/annotation_1.xlsx">annotation_1.xlsx</a></li>
 <li>📊 <a href="annotation/annotations/annotation_2.xlsx">annotation_2.xlsx</a></li>
@@ -105,8 +108,8 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 <li>📊 <a href="annotation/annotations/annotation_5.xlsx">annotation_5.xlsx</a></li>
 </ul>
 </details>
+</li>
 
-<ul>
 <li>📕 <a href="annotation/guidelines.pdf">guidelines.pdf</a></li>
 <li>📊 <a href="annotation/annotation_sheet.xlsx">annotation_sheet.xlsx</a></li>
 <li>📊 <a href="annotation/narratives_clean.xlsx">narratives_clean.xlsx</a></li>
@@ -115,7 +118,6 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 
 <details>
 <summary>📁 <a href="prompts_used/"><strong>prompts_used/</strong></a></summary>
-
 <ul>
 <li>📄 <a href="prompts_used/02_cluster_titles_prompt.txt">02_cluster_titles_prompt.txt</a></li>
 <li>📄 <a href="prompts_used/02_narrative_extraction_prompt.txt">02_narrative_extraction_prompt.txt</a></li>
@@ -125,7 +127,6 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 
 <details>
 <summary>📁 <a href="embedding_generation/"><strong>embedding_generation/</strong></a></summary>
-
 <ul>
 <li>📓 <a href="embedding_generation/runpod_embeddings.ipynb">runpod_embeddings.ipynb</a></li>
 </ul>
@@ -133,7 +134,6 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 
 <details>
 <summary>📁 <a href="taxonomy/"><strong>taxonomy/</strong></a></summary>
-
 <ul>
 <li>📄 <a href="taxonomy/narrative_taxonomy_ksil_with_paragraphs.csv">narrative_taxonomy_ksil_with_paragraphs.csv</a></li>
 <li>📄 <a href="taxonomy/narrative_taxonomy_ksil.csv">narrative_taxonomy_ksil.csv</a></li>
