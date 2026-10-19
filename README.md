@@ -211,32 +211,33 @@ The repository provides the annotation materials, individual annotation files, a
 
 Across five annotators, the extracted narrative was selected as the best-fitting interpretation of the source paragraph in 84.6% of forced-choice annotation responses, with an annotator-level standard error of 1.21 percentage points.
 
+```mermaid
 flowchart TB
 
     P["<b>PARLIAMENTARY PARAGRAPH</b><br/><br/>Όλη αυτή η αντιθεσμική μεθόδευση<br/>εντάσσεται στην επιχείρηση συγκάλυψης<br/>του εγκλήματος των Τεμπών και απόσεισης<br/>των ευθυνών από τους Υπουργούς<br/>της Κυβέρνησης της Νέας Δημοκρατίας."]
 
     Q["<b>HUMAN ANNOTATION TASK</b><br/><br/>Which candidate best represents<br/>the meaning of the paragraph?"]
 
-    A["<b>✓ EXTRACTED NARRATIVE</b><br/><br/>Government cover-up operation<br/>evading ministerial accountability"]
+    A["<b>CANDIDATE A</b><br/><br/>Government cover-up operation<br/>evading ministerial accountability"]
 
-    B["<b>ALTERNATIVE NARRATIVE</b><br/><br/>Institutional procedures delayed<br/>ministerial accountability."]
+    B["<b>CANDIDATE B</b><br/><br/>Institutional procedures delayed<br/>ministerial accountability."]
 
-    C["<b>UNRELATED NARRATIVE</b><br/><br/>Systemic railway neglect caused<br/>preventable Tempi tragedy."]
+    C["<b>CANDIDATE C</b><br/><br/>Systemic railway neglect caused<br/>preventable Tempi tragedy."]
 
     P --> Q
+
     Q --> A
     Q --> B
     Q --> C
 
     classDef paragraph fill:#EFF6FF,stroke:#3B82F6,stroke-width:1.5px,color:#1E3A5F
     classDef question fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,color:#334155
-    classDef correct fill:#DCFCE7,stroke:#16A34A,stroke-width:3px,color:#14532D
-    classDef alternative fill:#F8FAFC,stroke:#94A3B8,stroke-width:1.5px,color:#475569
+    classDef candidate fill:#F0FDF4,stroke:#22C55E,stroke-width:1.5px,color:#14532D
 
     class P paragraph
     class Q question
-    class A correct
-    class B,C alternative
+    class A,B,C candidate
+```
 
 ### Annotation Materials
 
