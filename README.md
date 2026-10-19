@@ -331,7 +331,7 @@ The annotation study focuses on the quality of the extracted narrative statement
 
 <hr>
 
-<h4>Example 1 of 5</h4>
+<h4>Example 1 of 3</h4>
 
 <p><strong>Parliamentary paragraph</strong></p>
 
@@ -363,71 +363,7 @@ The annotation study focuses on the quality of the extracted narrative statement
 
 <hr>
 
-<h4>Example 2 of 5</h4>
-
-<p><strong>Parliamentary paragraph</strong></p>
-
-<blockquote>
-Τα προσπερνάω τα περί ήθους, γιατί μας κρίνει όλους ο ελληνικός λαός. Ποιοι έχουμε σταθερή πορεία, ποιοι είμαστε συνεπείς και ποιοι δυστυχώς αποδεικνύουμε καθημερινά ότι το μόνο που μας ενδιαφέρει είναι οι θέσεις και η εξουσία. Θέλω να πω μόνο ένα πράγμα, για να κλείσω και να σεβαστώ και τους υπόλοιπους συναδέλφους. Αφήστε τα πολλά λόγια. Τα κρίνει ο νομικός κόσμος αυτά που κάνατε και υπάρχουν αξιόλογες τοποθετήσεις. Σας ζητώ ξανά για τελευταία φορά: Πάρτε τον κ. Μητσοτάκη τηλέφωνο, για να φέρει αύριο το e-mail και να το καταθέσει στα Πρακτικά της Βουλής, για να δούμε ποιος ήταν ο λόγος της αποστολής Τριαντόπουλου. Αν ο λόγος αποστολής Τριαντόπουλου είναι η αρωγή στις οικογένειες, τότε, από ό,τι φαίνεται, εσείς δεν είχατε κανένα λόγο να ψηφίσετε την προανακριτική. Αν, όμως, ο λόγος της αποστολής Τριαντόπουλου είναι όσα έγιναν στο θέμα του πεδίου, στο θέμα της αποκατάστασης που οδήγησε στην αλλοίωση κρίσιμων στοιχείων, τότε, όπως καταλαβαίνετε, συνεχίζετε να κοροϊδεύετε τον ελληνικό λαό μετά τις μεγάλες συγκεντρώσεις διαμαρτυρίας. Άρα, θα είναι μονόδρομος η παραίτηση όλης της Κυβέρνησης.
-</blockquote>
-
-<p><strong>Which narrative best represents the paragraph?</strong></p>
-
-<details>
-<summary>◯ A. Government's evidence tampering necessitates full resignation.</summary>
-<p><strong>Source:</strong> CART-generated narrative</p>
-</details>
-
-<details>
-<summary>◯ B. Railway privatization improved post-crash safety oversight.</summary>
-<p><strong>Source:</strong> False LLM-generated narrative</p>
-</details>
-
-<details>
-<summary>◯ C. Systemic government failure ongoing since Tempi crash.</summary>
-<p><strong>Source:</strong> Random narrative</p>
-</details>
-
-<details>
-<summary>◯ D. None of the above</summary>
-<p>No narrative selected.</p>
-</details>
-
-<hr>
-
-<h4>Example 3 of 5</h4>
-
-<p><strong>Parliamentary paragraph</strong></p>
-
-<blockquote>
-Τι έχει εισπράξει μέχρι στιγμής; Από τη μία, έχουμε κάποιους για κάποια ψηφαλάκια να σκυλεύουν πάνω στους νεκρούς των Τεμπών και από την άλλη, κάποιους άλλους να εκμεταλλεύονται τη θέση εξουσίας, για να μπορούν και να προσπαθούν να καλύψουν κάποιες καταστάσεις.
-</blockquote>
-
-<p><strong>Which narrative best represents the paragraph?</strong></p>
-
-<details>
-<summary>◯ A. Tempi tragedy caused only partisan vote-seeking.</summary>
-<p><strong>Source:</strong> False LLM-generated narrative</p>
-</details>
-
-<details>
-<summary>◯ B. Tempi tragedy politicized, authorities conceal responsibilities.</summary>
-<p><strong>Source:</strong> CART-generated narrative</p>
-</details>
-
-<details>
-<summary>◯ C. Government ensured swift justice in Tempi crash.</summary>
-<p><strong>Source:</strong> Random narrative</p>
-</details>
-
-<details>
-<summary>◯ D. None of the above</summary>
-<p>No narrative selected.</p>
-</details>
-
-<hr>
-
-<h4>Example 4 of 5</h4>
+<h4>Example 2 of 3</h4>
 
 <p><strong>Parliamentary paragraph</strong></p>
 
@@ -459,7 +395,7 @@ The annotation study focuses on the quality of the extracted narrative statement
 
 <hr>
 
-<h4>Example 5 of 5</h4>
+<h4>Example 3 of 3</h4>
 
 <p><strong>Parliamentary paragraph</strong></p>
 
