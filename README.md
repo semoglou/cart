@@ -80,6 +80,9 @@ cart/
 │   ├── 02_narrative_extraction_prompt.txt
 │   └── 02_narrative_extraction_retry_prompt.txt
 │
+├── embedding_generation/
+|   └── runpod_embeddings.ipynb
+│
 └── taxonomy/
     ├── narrative_taxonomy_ksil_with_paragraphs.csv
     ├── narrative_taxonomy_ksil.csv
@@ -297,9 +300,11 @@ Additional dependencies are required for specific computational stages, includin
 
 The paragraph-level and narrative-level semantic embeddings were generated using the Qwen3-Embedding-8B model in a GPU-enabled RunPod environment.
 
-The resulting embeddings are provided in `dataset/2_screening_extraction/par_embeddings.npy` and `dataset/3_narrative_taxonomy/narrative_embeddings.npy`, respectively.
+The resulting embeddings are provided in [`par_embeddings.npy`](dataset/2_screening_extraction/par_embeddings.npy) and [`narrative_embeddings.npy`](dataset/3_narrative_taxonomy/narrative_embeddings.npy), respectively.
 
 The published embedding files allow researchers to reproduce downstream analyses without repeating this computationally intensive process.
+
+The embedding generation procedure is documented in [`embedding_generation/runpod_embeddings.ipynb`](embedding_generation/runpod_embeddings.ipynb).
 
 ### Accessing the Repository
 
