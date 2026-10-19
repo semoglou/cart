@@ -21,6 +21,8 @@ CART employs a three-stage workflow that progressively transforms unstructured p
 
 The first stage identifies thematically relevant paragraphs using semantic embeddings, paragraph-level clustering, and [CAKE](https://www.sciencedirect.com/science/article/pii/S2666827026000800?via%3Dihub)-based confidence screening. The second stage employs DeepSeek-R1 to extract narrative statements from the selected parliamentary material. Finally, the extracted narratives are organized into recurring families through narrative-level clustering, using [Composite Silhouette](https://link.springer.com/chapter/10.1007/978-3-032-37654-1_38) for cluster-number selection and [K-Sil](https://arxiv.org/abs/2506.12878) for taxonomy construction.
 
+The initial corpus of 216,396 parliamentary paragraphs is reduced to 117,716 following preprocessing. Thematic screening identifies 10,229 relevant paragraphs, from which 4,537 political narrative statements are extracted and subsequently organized into ten recurring narrative families.
+
 ![CART Research Pipeline](figs/pipeline.png)
 
 A detailed pseudocode description of the methodology is available in [Algorithm 1: The CART Framework](figs/algorithm.png).
