@@ -145,6 +145,17 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 </ul>
 </details>
 
+<details>
+<summary>📁 <a href="figs/"><strong>figs/</strong></a></summary>
+<ul>
+<li>📄 <a href="figs/activity.pdf">activity.pdf</a></li>
+<li>📄 <a href="figs/algorithm.png">algorithm.png</a></li>
+<li>📄 <a href="figs/evolution.png">evolution.png</a></li>
+<li>📄 <a href="figs/ksilsum.png">ksilsum.png</a></li>
+<li>📄 <a href="figs/pipeline.png">pipeline.png</a></li>    
+</ul>
+</details>
+
 ## Workflow
 
 The CART implementation is organized into three sequential analytical notebooks, accompanied by a separate dataset integrity verification notebook. Together, they document the transformation of parliamentary discourse into a structured taxonomy of recurring political narratives.
