@@ -608,6 +608,11 @@ This work was supported by the [_Archimedes Research Unit_](https://archimedesai
   <img src="https://raw.githubusercontent.com/semoglou/cake/main/logos/AthenaRC_Archimedes_Unit_Logo_EN_Standard_Colour.png" alt="Athena Research Center and Archimedes Research Unit" width="250">
 </p>
 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/semoglou/cart/main/figs/arch_logo.png" alt="Athena Research Center and Archimedes Research Unit" width="250">
+</p>
+
 ## Contact
 
 For questions or feedback about **CART**, please contact:
