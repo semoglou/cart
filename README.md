@@ -253,12 +253,26 @@ LLM-based taxonomy construction pipelines, generated taxonomies, and comparative
 <li>
 <details>
 <summary>📁 <a href="llm_baselines/evaluation/"><strong>evaluation/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Materials for evaluating narrative-label adequacy across CART and the LLM baselines.
+</blockquote>
+
 </details>
 </li>
 
 <li>
 <details>
 <summary>📁 <a href="llm_baselines/llm_pipeline/"><strong>llm_pipeline/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Notebooks for constructing and synthesizing taxonomies using DeepSeek-R1 and Llama 3.3 70B.
+</blockquote>
+
 <ul>
 <li>📓 <a href="llm_baselines/llm_pipeline/llm_pipeline_deepseekr1.ipynb">llm_pipeline_deepseekr1.ipynb</a></li>
 <li>📓 <a href="llm_baselines/llm_pipeline/llm_pipeline_llama3370b.ipynb">llm_pipeline_llama3370b.ipynb</a></li>
@@ -270,6 +284,13 @@ LLM-based taxonomy construction pipelines, generated taxonomies, and comparative
 <li>
 <details>
 <summary>📁 <a href="llm_baselines/llm_taxonomies/"><strong>llm_taxonomies/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Generated LLM taxonomy outputs and the shared paragraph dataset for comparison with CART.
+</blockquote>
+
 <ul>
 
 <li>
