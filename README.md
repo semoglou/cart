@@ -33,6 +33,11 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 
 <details>
 <summary>📁 <a href="framework/"><strong>framework/</strong></a></summary>
+
+<blockquote>
+Implementation notebooks for the three-stage CART workflow and dataset integrity verification.
+</blockquote>
+
 <ul>
 <li>📓 <a href="framework/00_dataset_integrity_check.ipynb">00_dataset_integrity_check.ipynb</a></li>
 <li>📓 <a href="framework/01_preparation.ipynb">01_preparation.ipynb</a></li>
