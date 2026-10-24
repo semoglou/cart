@@ -152,6 +152,7 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 <li>📄 <a href="figs/algorithm.png">algorithm.png</a></li>
 <li>📄 <a href="figs/evolution.png">evolution.png</a></li>
 <li>📄 <a href="figs/ksilsum.png">ksilsum.png</a></li>
+<li>📄 <a href="figs/arch_logo.png">arch_logo.png</a></li>     
 <li>📄 <a href="figs/pipeline.png">pipeline.png</a></li>    
 </ul>
 </details>
