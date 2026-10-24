@@ -34,6 +34,8 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 <details>
 <summary>📁 <a href="framework/"><strong>framework/</strong></a></summary>
 
+<br>
+
 <blockquote>
 Implementation notebooks for the three-stage CART workflow and dataset integrity verification.
 </blockquote>
