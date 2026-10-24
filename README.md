@@ -79,6 +79,13 @@ Original parliamentary corpus, preprocessing resources, and cleaned paragraph da
 <li>
 <details>
 <summary>📁 <a href="dataset/2_screening_extraction/"><strong>2_screening_extraction/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Outputs from thematic screening, narrative extraction, and extraction validation.
+</blockquote>
+
 <ul>
 <li>📄 <a href="dataset/2_screening_extraction/02_cluster_metadata.csv">02_cluster_metadata.csv</a></li>
 <li>📄 <a href="dataset/2_screening_extraction/02_clusters_with_titles.csv">02_clusters_with_titles.csv</a></li>
@@ -96,6 +103,13 @@ Original parliamentary corpus, preprocessing resources, and cleaned paragraph da
 <li>
 <details>
 <summary>📁 <a href="dataset/3_narrative_taxonomy/"><strong>3_narrative_taxonomy/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Narrative embeddings and clustering results used for taxonomy construction.
+</blockquote>
+
 <ul>
 <li>📄 <a href="dataset/3_narrative_taxonomy/narrative_embeddings.npy">narrative_embeddings.npy</a></li>
 <li>📄 <a href="dataset/3_narrative_taxonomy/narrative_taxonomy_ksil.csv">narrative_taxonomy_ksil.csv</a></li>
@@ -109,10 +123,23 @@ Original parliamentary corpus, preprocessing resources, and cleaned paragraph da
 <details>
 <summary>📁 <a href="annotation/"><strong>annotation/</strong></a></summary>
 
+<br>
+
+<blockquote>
+Annotation materials, collected responses, and analyses of narrative extraction quality.
+</blockquote>
+
 <ul>
 <li>
 <details>
 <summary>📁 <a href="annotation/analysis/"><strong>analysis/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Notebooks for annotation results and semantic similarity error analysis.
+</blockquote>
+
 <ul>
 <li>📓 <a href="annotation/analysis/annotation_results_analysis.ipynb">annotation_results_analysis.ipynb</a></li>
 <li>📓 <a href="annotation/analysis/error_analysis_similarity.ipynb">error_analysis_similarity.ipynb</a></li>
@@ -123,6 +150,13 @@ Original parliamentary corpus, preprocessing resources, and cleaned paragraph da
 <li>
 <details>
 <summary>📁 <a href="annotation/annotations/"><strong>annotations/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Individual annotation responses collected during the evaluation.
+</blockquote>
+
 <ul>
 <li>📊 <a href="annotation/annotations/annotation_1.xlsx">annotation_1.xlsx</a></li>
 <li>📊 <a href="annotation/annotations/annotation_2.xlsx">annotation_2.xlsx</a></li>
@@ -142,6 +176,13 @@ Original parliamentary corpus, preprocessing resources, and cleaned paragraph da
 
 <details>
 <summary>📁 <a href="prompts_used/"><strong>prompts_used/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Original LLM prompts for cluster title generation and narrative extraction.
+</blockquote>
+
 <ul>
 <li>📄 <a href="prompts_used/02_cluster_titles_prompt.txt">02_cluster_titles_prompt.txt</a></li>
 <li>📄 <a href="prompts_used/02_narrative_extraction_prompt.txt">02_narrative_extraction_prompt.txt</a></li>
@@ -151,6 +192,13 @@ Original parliamentary corpus, preprocessing resources, and cleaned paragraph da
 
 <details>
 <summary>📁 <a href="embedding_generation/"><strong>embedding_generation/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Notebooks documenting semantic embedding generation in a GPU environment.
+</blockquote>
+
 <ul>
 <li>📓 <a href="embedding_generation/runpod_embeddings.ipynb">runpod_embeddings.ipynb</a></li>
 </ul>
@@ -158,6 +206,13 @@ Original parliamentary corpus, preprocessing resources, and cleaned paragraph da
 
 <details>
 <summary>📁 <a href="taxonomy/"><strong>taxonomy/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Final CART taxonomy outputs and their links to the source parliamentary paragraphs.
+</blockquote>
+
 <ul>
 <li>📄 <a href="taxonomy/narrative_taxonomy_ksil_with_paragraphs.csv">narrative_taxonomy_ksil_with_paragraphs.csv</a></li>
 <li>📄 <a href="taxonomy/narrative_taxonomy_ksil.csv">narrative_taxonomy_ksil.csv</a></li>
@@ -167,6 +222,13 @@ Original parliamentary corpus, preprocessing resources, and cleaned paragraph da
 
 <details>
 <summary>📁 <a href="figs/"><strong>figs/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Figures illustrating the CART methodology, results, and narrative evolution.
+</blockquote>
+
 <ul>
 <li>📄 <a href="figs/activity.pdf">activity.pdf</a></li>
 <li>📄 <a href="figs/algorithm.png">algorithm.png</a></li>
@@ -179,6 +241,13 @@ Original parliamentary corpus, preprocessing resources, and cleaned paragraph da
 
 <details>
 <summary>📁 <a href="llm_baselines/"><strong>llm_baselines/</strong></a></summary>
+
+<br>
+
+<blockquote>
+LLM-based taxonomy construction pipelines, generated taxonomies, and comparative evaluation materials.
+</blockquote>
+
 <ul>
 
 <li>
