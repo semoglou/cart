@@ -51,10 +51,23 @@ Implementation notebooks for the three-stage CART workflow and dataset integrity
 <details>
 <summary>📁 <a href="dataset/"><strong>dataset/</strong></a></summary>
 
+<br>
+
+<blockquote>
+Research datasets, semantic embeddings, and intermediate outputs from the CART workflow.
+</blockquote>
+
 <ul>
 <li>
 <details>
 <summary>📁 <a href="dataset/1_preparation/"><strong>1_preparation/</strong></a></summary>
+
+<br>
+
+<blockquote>
+Original parliamentary corpus, preprocessing resources, and cleaned paragraph dataset.
+</blockquote>
+
 <ul>
 <li>📄 <a href="dataset/1_preparation/01_paragraphs_clean.csv.zip">01_paragraphs_clean.csv.zip</a></li>
 <li>📄 <a href="dataset/1_preparation/01_stopwords_all.txt">01_stopwords_all.txt</a></li>
