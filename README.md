@@ -157,6 +157,63 @@ A detailed pseudocode description of the methodology is available in [Algorithm 
 </ul>
 </details>
 
+<details>
+<summary>📁 <a href="llm_baselines/"><strong>llm_baselines/</strong></a></summary>
+<ul>
+
+<li>
+<details>
+<summary>📁 <a href="llm_baselines/evaluation/"><strong>evaluation/</strong></a></summary>
+</details>
+</li>
+
+<li>
+<details>
+<summary>📁 <a href="llm_baselines/llm_pipeline/"><strong>llm_pipeline/</strong></a></summary>
+<ul>
+<li>📓 <a href="llm_baselines/llm_pipeline/llm_pipeline_deepseekr1.ipynb">llm_pipeline_deepseekr1.ipynb</a></li>
+<li>📓 <a href="llm_baselines/llm_pipeline/llm_pipeline_llama3370b.ipynb">llm_pipeline_llama3370b.ipynb</a></li>
+<li>📓 <a href="llm_baselines/llm_pipeline/synthesis.ipynb">synthesis.ipynb</a></li>
+</ul>
+</details>
+</li>
+
+<li>
+<details>
+<summary>📁 <a href="llm_baselines/llm_taxonomies/"><strong>llm_taxonomies/</strong></a></summary>
+<ul>
+
+<li>
+<details>
+<summary>📁 <a href="llm_baselines/llm_taxonomies/deepseek_r1/"><strong>deepseek_r1/</strong></a></summary>
+<ul>
+<li>📄 <a href="llm_baselines/llm_taxonomies/deepseek_r1/01_extracted_narratives_R1.csv">01_extracted_narratives_R1.csv</a></li>
+<li>📄 <a href="llm_baselines/llm_taxonomies/deepseek_r1/02_classified_dataframe_R1.csv">02_classified_dataframe_R1.csv</a></li>
+<li>📄 <a href="llm_baselines/llm_taxonomies/deepseek_r1/03_taxonomy_mapping_R1.csv">03_taxonomy_mapping_R1.csv</a></li>
+</ul>
+</details>
+</li>
+
+<li>
+<details>
+<summary>📁 <a href="llm_baselines/llm_taxonomies/llama3_3_70b/"><strong>llama3_3_70b/</strong></a></summary>
+<ul>
+<li>📄 <a href="llm_baselines/llm_taxonomies/llama3_3_70b/01_extracted_narratives_llama3-3-70b.csv">01_extracted_narratives_llama3-3-70b.csv</a></li>
+<li>📄 <a href="llm_baselines/llm_taxonomies/llama3_3_70b/02_classified_dataframe_llama3-3-70b.csv">02_classified_dataframe_llama3-3-70b.csv</a></li>
+<li>📄 <a href="llm_baselines/llm_taxonomies/llama3_3_70b/03_taxonomy_mapping_llama3-3-70b.csv">03_taxonomy_mapping_llama3-3-70b.csv</a></li>
+</ul>
+</details>
+</li>
+
+<li>📄 <a href="llm_baselines/llm_taxonomies/CART_LLM_taxonomies_shared_paragraphs.csv">CART_LLM_taxonomies_shared_paragraphs.csv</a></li>
+
+</ul>
+</details>
+</li>
+
+</ul>
+</details>
+
 ## Workflow
 
 The CART implementation is organized into three sequential analytical notebooks, accompanied by a separate dataset integrity verification notebook. Together, they document the transformation of parliamentary discourse into a structured taxonomy of recurring political narratives.
