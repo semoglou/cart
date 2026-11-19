@@ -262,7 +262,7 @@ The notebook checks the readability and structure of the available data files, i
 
 ## Datasets and Research Outputs
 
-The repository provides the datasets, semantic embeddings, and intermediate research outputs associated with the three stages of the CART workflow.
+The repository provides the datasets, semantic embeddings, and intermediate research outputs associated with the three stages of the CART workflow (also available on [Zenodo](https://zenodo.org/records/19816656)).
 
 These files document the progression from the initial paragraph-level parliamentary corpus to the extraction of political narrative statements and the construction of the final narrative taxonomy.
 
