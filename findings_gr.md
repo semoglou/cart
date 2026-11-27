@@ -1,6 +1,6 @@
 # Τέμπη: Τα πολιτικά αφηγήματα στον κοινοβουλευτικό λόγο (2023–2025)
 
-**Ελληνική σύνοψη της ερευνητικής εργασίας CART: Clustering-based Analysis of Recurring Narratives for Taxonomy Construction**
+**CART: Clustering-based Analysis of Recurring Narratives for Taxonomy Construction**
 
 Άγγελος Σέμογλου, Θωμάς Τσελέντης, Ιωάννης Παυλόπουλος  
 Οικονομικό Πανεπιστήμιο Αθηνών · Μονάδα «Αρχιμήδης», Ερευνητικό Κέντρο «Αθηνά»  
